@@ -121,3 +121,61 @@ Web教材: http://mj.is-good.net
 <div width="100%" align="center">
 <img alt="JSの歴史" src="assets/PITCHME-2cd4d.png" width="75%" />
 </div>
+
+---
+## ES6の正式後悔は約2年前
+### JavaScript言語仕様の大変革
+---
+
+## ES6 = ECMAScript2015
+- ECMAScriptとは、国際的な標準化団体であるEcmaインターナショナルによって、JavaScriptを元に標準化された言語仕様。JavaScriptのブラウザ間での互換性を高めるために策定された。
+- 2015年6月17日に公開された二つ前のバージョン。
+
+---
+## 当研修における旧式JavaScriptの定義
+
+- ECMAScript5までの文法とさせて頂きます。
+ - altJSは対象外
+
+---
+
+## 旧式JavaScriptの問題点
+ - モジュール/パッケージ管理（モジュール定義ができない、パッケージの構成管理ができない）
+ - 関数/変数のグローバル感染による問題
+ - わかりにくいプロトタイプ型オブジェクト指向表現
+   - 広く普及したクラス型オブジェクト指向言語の表記と異なる
+ - モダンシンタックス表現に対応していない
+   - アロー関数が利用できない
+   - 分割代入（タプル）
+   - 他
+
+<div align="center" >
+  <img src="assets/PITCHME-18f89.png" width="40%" />
+</div>
+
+---
+
+## altJS（オルトジェイエス）
+
+- TypeScript
+ - マイクロソフトのJavaScriptに静的型付けを導入した言語
+- CoffeeScript
+- Haxe（ヘックス）
+- Dart (Google)
+- JSX (DeNA)
+
+---
+## ES6とは
+### かつてない規模のメジャーアップデートをしたJavaScript
+- モジュール管理機能
+-  クラス型オブジェクト指向言語の記述が可能に
+- アロー関数記述が可能に
+- Etc…
+
+---
+# JavaScript開発スタイルの遷移
+
+---
+# ブラウザのECMAScript対応状況
+- ECMAScript 6 compatibility tableを見ることで確認可能
+https://kangax.github.io/compat-table/es6/
