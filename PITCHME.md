@@ -46,7 +46,7 @@ exports.increment = function(val) {
   return add(val, 1);
 };
 
-
+// to be continued
 ```
 +++
 
@@ -60,5 +60,6 @@ var inc = require('increment').increment;
 var a = 1;
 inc(a);
 
+// end
 ```
 ----
