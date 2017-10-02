@@ -75,13 +75,11 @@ Web教材: http://mj.is-good.net
 - 2012年あたりまでのWebの進化を分かりやすく図示したWebサイト
 - http://www.evolutionoftheweb.com/
 ![](assets/PITCHME-d9545.png)
-<!--
-<div width="100%" align="center">
-<img alt="Evolution of the Web" src="assets/PITCHME-d9545.png" width="50%" >
-</div>-->
 
 ---
 ## Q. JavaScriptが誕生して今年で何年？
+
+---
 
 ## A. 22年
 - 開発コード：Mocha
@@ -109,6 +107,9 @@ Web教材: http://mj.is-good.net
 - ECMA
  - 情報通信システムの分野における国際標準化団体の旧名称。European Computer Manufacturer Association（欧州電子計算機工業会）
  - 現在はEcmaインターナショナルと呼ばれる。
+
++++
+
 - ECMAScriptとは
  - Ecmaインターナショナルが定めるJavaScript言語仕様の国際標準規格ECMA-262のこと
  - 最新版はECMAScript2016(ES7)
