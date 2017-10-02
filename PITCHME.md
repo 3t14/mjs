@@ -27,7 +27,7 @@ Web教材: http://mj.is-good.net
  - Systemなど
 
 ---
-#### CommonJSにおけるモジュールの定義と利用方法の例
+#### CommonJSにおけるモジュールの定義と利用例
 
 ```JavaScript
 
@@ -45,8 +45,11 @@ var = add = require('math').add;
 exports.increment = function(val) {
   return add(val, 1);
 };
+
 ```
 +++
+
+#### CommonJSにおけるモジュールの定義と利用例
 
 ```JavaScript
 // main.js
