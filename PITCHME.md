@@ -118,11 +118,7 @@ Web教材: http://mj.is-good.net
 ---
 ## JavaScriptの誕生からES7の誕生までの流れ
 
-<style>
-table {
-  font-size: 8pt
-}
-</style>
+<div style="font-size: 3pt">
 
 | 年 | 内容 |
 | :---: | --------- |
@@ -139,3 +135,5 @@ table {
 | 2015年	| ECMAScript2015 (ES6) 公開  (メジャーアップデート)
 | 2016年6月14日 | ECMAScript2016 (ES7) 公開
 | 2016年6月 | 間も無くECMAScript2017 (ES8)が 公開
+
+</div>
