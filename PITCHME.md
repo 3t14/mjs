@@ -19,6 +19,6 @@ Web教材: http://mj.is-good.net
 # 当研修の概要
 +++
 
-# 目標
+## 目標
 - モダンなJavaScriptとしてES6を取り上げ、その開発環境の構築例と基本文法を学ぶ
 - モダンなJavaScriptフレームワークとしてReact.jsの基本について学ぶ
