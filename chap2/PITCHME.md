@@ -11,7 +11,7 @@ Web教材: http://mj.is-good.net
 - 2012年あたりまでのWebの進化を分かりやすく図示したWebサイト
 - http://www.evolutionoftheweb.com/
 <div width="100%" align="center">
-<img alt="Evolution of the Web" src="assets/PITCHME-d9545.png" width="60%" />
+<img alt="Evolution of the Web" src="/assets/PITCHME-d9545.png" width="60%" />
 </div>
 ---
 ## Q. JavaScriptが誕生して今年で何年？
@@ -55,7 +55,7 @@ Web教材: http://mj.is-good.net
 #### JavaScriptの誕生からES7の誕生までの流れ
 
 <div width="100%" align="center">
-<img alt="JSの歴史" src="assets/PITCHME-2cd4d.png" width="75%" />
+<img alt="JSの歴史" src="/assets/PITCHME-2cd4d.png" width="75%" />
 </div>
 
 ---
@@ -122,7 +122,7 @@ https://kangax.github.io/compat-table/es6/
 <div width="100%" align="center">
 <img alt="ES6 compativility table" src="/assets/PITCHME-d3c5f.png" width="75%" />
 </div>
- 
+
 ---
 ## 主要なブラウザの対応状況
 - デスクトップ用ブラウザ：ES5, ES6にほぼ対応
