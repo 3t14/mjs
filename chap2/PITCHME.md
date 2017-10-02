@@ -1,5 +1,5 @@
 #### モダンJavaScriptプログラミング入門
-### 2. JavaScriptの歴史
+# 2. JavaScriptの歴史
 #### 田中　充
 ##### 株式会社イワテシガ
 
