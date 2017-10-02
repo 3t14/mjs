@@ -74,9 +74,42 @@ Web教材: http://mj.is-good.net
 ### Webの進化
 - 2012年あたりまでのWebの進化を分かりやすく図示したWebサイト
 - http://www.evolutionoftheweb.com/
+![](assets/PITCHME-d9545.png)
+<!--
 <div width="100%" align="center">
 <img alt="Evolution of the Web" src="assets/PITCHME-d9545.png" width="50%" >
-</div>
-
+</div>-->
 
 ---
+## Q. JavaScriptが誕生して今年で何年？
+
+## A. 22年
+- 開発コード：Mocha
+- 1995年 5月23日にBrendan Eichが開発し、Netscape Navigatorに搭載してリリース
+開発期間10日間？
+- JavaScriptはNetscape Navigator2.0からの名称。
+
+---
+## Q. JavaScriptはJavaとは関係ない?
+
+---
+
+## A. △
+- 言語文法的には大きく異なり、別もの。
+- しかし、双方の登録商標は、当時Sun Microsystems. 現在はOracleが保持。
+- JavaScriptは、1995/12/4にNetscapeとSunが共同で発表。
+
+---
+## Q. 当初JavaScriptの利用目的はクライアントサイド（ブラウザ）用のスクリプト言語だった？
+
+---
+## A. ×
+- プレスリリースには、明確に”both the client and the server”と記載されており、当初はサーバーサイドも意識していた。
+- ECMAScriptとJavaScriptの関係
+- ECMA
+ - 情報通信システムの分野における国際標準化団体の旧名称。European Computer Manufacturer Association（欧州電子計算機工業会）
+ - 現在はEcmaインターナショナルと呼ばれる。
+- ECMAScriptとは
+ - Ecmaインターナショナルが定めるJavaScript言語仕様の国際標準規格ECMA-262のこと
+ - 最新版はECMAScript2016(ES7)
+ - 来週あたりにECMAScript2017(ES8)が勧告予定
