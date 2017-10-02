@@ -118,18 +118,4 @@ Web教材: http://mj.is-good.net
 ---
 #### JavaScriptの誕生からES7の誕生までの流れ
 
-| 年 | 内容 |
-| :---: | --------- |
-| 1995年 | <span style="font-size: 8px; line-height: 0px">Netscape CommunicationsのBrendan Eichによって開発され、Netscape Navigator 2.0で実装された。開発当初はLiveScriptと呼ばれていた。<br />サン・マイクロシステムズ（現・オラクル）が開発したプログラミング言語Javaが当時大きな注目を浴びており、Netscapeとサン・マイクロシステムズが業務提携していた事もあったため、JavaScriptという名前に変更された。</span>|
-| 1996年 | マイクロソフトのInternet Explorer 3.0に搭載されるようになると、その手軽さからJavaScriptは急速に普及していく。 |
-| 1997年	| 通信に関する標準を策定する国際団体EcmaインターナショナルによってJavaScriptの中核的な仕様がECMAScriptとして標準化され、多くのウェブブラウザで利用できるようになった。|
-| 1998年	| ECMAScript2 公開
-| 1999年	| ECMAScript3 公開
-| 2000年	| GoogleやAmazon等の大手企業もJavaScriptを積極的に利用し始めた。
-| 〜2003年 | 現在のJavaScriptの後継バージョンとなるJavaScript 2.0を作ろうとした動きがあったが、Netscapeとマイクロソフトの対立でまとまらなかった。当時Netscapeが提案していた案はアドビのActionScript 2.0に引き継がれ、マイクロソフトの案はJScript.NETへと引き継がれた。
-| 2005年	| JavaScriptの非同期通信を利用した技術にAjaxという名前が付けられたことによって、高機能なウェブアプリケーション開発言語の一つとして再び注目を集めた。
-| 〜2008年 | ECMAScript4 放棄
-| 2009年	| ECMAScript5 公開
-| 2015年	| ECMAScript2015 (ES6) 公開  (メジャーアップデート)
-| 2016年6月14日 | ECMAScript2016 (ES7) 公開
-| 2016年6月 | 間も無くECMAScript2017 (ES8)が 公開
+![JSの歴史](assets/PITCHME-2cd4d.png)
