@@ -118,8 +118,14 @@ Web教材: http://mj.is-good.net
 ---
 ## JavaScriptの誕生からES7の誕生までの流れ
 
+<style>
+table {
+  font-size: 8pt
+}
+</style>
+
 | 年 | 内容 |
-| --- | --------- |
+| :---: | --------- |
 | 1995年 | Netscape CommunicationsのBrendan Eichによって開発され、Netscape Navigator 2.0で実装された。開発当初はLiveScriptと呼ばれていた。<br />サン・マイクロシステムズ（現・オラクル）が開発したプログラミング言語Javaが当時大きな注目を浴びており、Netscapeとサン・マイクロシステムズが業務提携していた事もあったため、JavaScriptという名前に変更された。|
 | 1996年 | マイクロソフトのInternet Explorer 3.0に搭載されるようになると、その手軽さからJavaScriptは急速に普及していく。 |
 | 1997年	| 通信に関する標準を策定する国際団体EcmaインターナショナルによってJavaScriptの中核的な仕様がECMAScriptとして標準化され、多くのウェブブラウザで利用できるようになった。|
