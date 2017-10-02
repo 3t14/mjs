@@ -74,7 +74,8 @@ Web教材: http://mj.is-good.net
 ### Webの進化
 - 2012年あたりまでのWebの進化を分かりやすく図示したWebサイト
 - http://www.evolutionoftheweb.com/
-![](assets/PITCHME-d9545.png)
+<div width="100%" align="center">
+<img alt="Evolution of the Web" src="assets/PITCHME-d9545.png" width="70%" >
 
 ---
 ## Q. JavaScriptが誕生して今年で何年？
