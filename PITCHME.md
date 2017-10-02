@@ -1,6 +1,8 @@
-## モダンJavaScriptプログラミング入門
+#### モダンJavaScriptプログラミング入門
 # 第1日
-# 開発環境と基本文法
-Materials for Modern JavaScript Courses
+## 開発環境と基本文法
 
-![画像](assets/README-66897.png)
+#### 田中　充
+##### 株式会社イワテシガ
+
+Web教材: http://mj.is-good.net
