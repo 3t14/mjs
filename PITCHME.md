@@ -33,4 +33,4 @@ Web教材: http://mj.is-good.net
 
 ### 目標
 - モダンなJavaScriptとしてES6を取り上げ、その開発環境の構築例と基本文法について学ぶ
-- モダンなJavaScriptフレームワークとしてReact.jsの基本について理解する
+- モダンなJavaScriptフレームワークとして<span style="color:purple">React.js</span>の基本について理解する
