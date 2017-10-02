@@ -86,7 +86,7 @@ Web教材: http://mj.is-good.net
    - 他
 
 <div align="center" >
-  <img src="assets/PITCHME-18f89.png" width="40%" />
+  <img src="/assets/PITCHME-18f89.png" width="40%" />
 </div>
 
 ---
@@ -109,31 +109,30 @@ Web教材: http://mj.is-good.net
 - Etc…
 
 ---
-# JavaScript開発スタイルの遷移
+## JavaScript開発スタイルの遷移
 
 ![](assets/PITCHME-b213d.png)
 
 ※ ES6の登場によってaltJSが使われなくなるという訳ではありません。
 
 ---
-# ブラウザのECMAScript対応状況
+## ブラウザのECMAScript対応状況
 - ECMAScript 6 compatibility tableを見ることで確認可能
 https://kangax.github.io/compat-table/es6/
 <div width="100%" align="center">
-<img alt="ES6 compativility table" src="assets/PITCHME-d3c5f.png" width="75%" />
+<img alt="ES6 compativility table" src="/assets/PITCHME-d3c5f.png" width="75%" />
 </div>
-
+ 
 ---
-# 主要なブラウザの対応状況
+## 主要なブラウザの対応状況
 - デスクトップ用ブラウザ：ES5, ES6にほぼ対応
 - モバイル用ブラウザ：ES6にもほぼ対応。
 - IE11: わずか10%程度の対応
 
 ---
-# ES6の対応の仕方
+## ES6の対応の仕方
 
 - 現在: モバイルファースト
  - トランスコンパイラ（トランスパイラ）を用いることで過去バージョンのJavaScriptへのコンパイルを行うことで対応することが多かった。
 - 最新のモバイルOSは、ES6にほぼ対応済みのため、必ずしもトランスパイルする必要はない
  - Android系のWebブラウザは必ずしも、最新とは限らないので、依然トランスパイラのニーズは高い。
- 
