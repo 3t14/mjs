@@ -27,10 +27,10 @@ Web教材: http://mj.is-good.net
  - Systemなど
 
 ---
-#### CommonJSにおけるモジュールの定義と利用例
+### CommonJSにおけるモジュールの定義と利用例
 
 ```JavaScript
-
+// add.js
 module.exports.add = function() {
   var sum = 0, i = 0, args = arguments, l = args.length;
   while (i < l) {
@@ -39,7 +39,7 @@ module.exports.add = function() {
   return sum;
 };
 
-// increment.js // math.jsファイルのモジュールaddを取得
+// increment.js: math.jsファイルのモジュールaddを取得
 var = add = require('math').add;
 // increment関数をモジュールとして出力
 exports.increment = function(val) {
@@ -50,16 +50,43 @@ exports.increment = function(val) {
 ```
 +++
 
-#### CommonJSにおけるモジュールの定義と利用例
+### CommonJSにおけるモジュールの定義と利用例
 
 ```JavaScript
 
-// main.js
-// increment.jsで定義されたincrement関数をinc関数として採用
+// main.js:
+//  increment.jsで定義されたincrement関数をinc関数として採用
 var inc = require('increment').increment;
 var a = 1;
 inc(a);
 
 // end
 ```
-----
+
+---
+## Node.jsの登場
+
+- Node.jsはUnixプラットフォーム上で動作するサーバーサイドのJavaScript実行環境
+- 2009年にRyan Dahl氏によって開発。
+- JavaScriptエンジンはGoogle V8 JavaScriptエンジンを利用
+- Node.jsでは、CommonJSのモジュール機能等の一部仕様を採用
+- 現在はWebSocketやIoTのスクリプト言語やその他の目的で広く用いられている。
+- Node.jsのパッケージ管理ソフトであるnpmコマンドは、JavaScriptのパッケージ管理ソフトとして広く普及
+
+---
+## JavaScriptのモダンな開発環境
+
+- サーバーサイドJavaScript実行環境であるNode.jsを活用することが一般的
+ - npmコマンドによるJavaScriptライブラリのパッケージ管理
+ - npmコマンドが使えれば、altJSやSassやLESSなどのCSSプリプロセッサ、さらにはトランスパイラ環境も導入が容易！
+
+---
+## 当研修で利用する統合開発環境: Cloud9
+
+- クラウド統合開発環境<br /> <em>“Development As A Service”
+(PaaS型の開発環境を提供）</em>
+- ソースコードを公開してもよいのであれば、無料で無制限のワークスペースの利用が可能
+- Sublime風のタブテキスト編集環境の利用が可能
+- 言語に応じたコード補完機能を提供
+
+![](assets/PITCHME-8087c.png)
