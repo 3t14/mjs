@@ -27,9 +27,10 @@ Web教材: http://mj.is-good.net
  - Systemなど
 
 ---
-## CommonJSにおけるモジュールの定義と利用方法の例
+#### CommonJSにおけるモジュールの定義と利用方法の例
 
 ```JavaScript
+
 module.exports.add = function() {
   var sum = 0, i = 0, args = arguments, l = args.length;
   while (i < l) {
@@ -44,10 +45,14 @@ var = add = require('math').add;
 exports.increment = function(val) {
   return add(val, 1);
 };
+```
++++
 
+```JavaScript
 // main.js
 // increment.jsで定義されたincrement関数をinc関数として採用
 var inc = require('increment').increment;
 var a = 1;
 inc(a);
 ```
+----
