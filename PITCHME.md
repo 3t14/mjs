@@ -46,16 +46,19 @@ exports.increment = function(val) {
   return add(val, 1);
 };
 
+
 ```
 +++
 
 #### CommonJSにおけるモジュールの定義と利用例
 
 ```JavaScript
+
 // main.js
 // increment.jsで定義されたincrement関数をinc関数として採用
 var inc = require('increment').increment;
 var a = 1;
 inc(a);
+
 ```
 ----
