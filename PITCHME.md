@@ -65,3 +65,15 @@ Web教材: http://mj.is-good.net
 - 解説→演習繰り返しを実施します。
 - 休憩
  - 午前に1回、午後に2-3回10分程度の休憩時間を入れます。
+
+---
+
+## JavaScriptの歴史
+
+---
+### Webの進化
+- 2012年あたりまでのWebの進化を分かりやすく図示したWebサイト
+- http://www.evolutionoftheweb.com/
+![Evolution of the Web](assets/PITCHME-d9545.png)
+
+---
