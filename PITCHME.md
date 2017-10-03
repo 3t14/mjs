@@ -7,6 +7,7 @@ Web教材: http://mj.is-good.net
 
 
 ---
+@title(従来の開発環境の問題点)
 ## 従来の開発環境の問題点
 - JavaScript＝JavaScriptエンジン上でコンパイルせずに動作するもの
 - ブラウザ（≒フロントエンド)上で実行するのみ
@@ -68,10 +69,10 @@ inc(a);
 
 - Node.jsはUnixプラットフォーム上で動作するサーバーサイドのJavaScript実行環境
 - 2009年にRyan Dahl氏によって開発。
-- JavaScriptエンジンはGoogle V8 JavaScriptエンジンを利用
+- JavaScriptエンジンはGoogle V8を利用
 - Node.jsでは、CommonJSのモジュール機能等の一部仕様を採用
 - 現在はWebSocketやIoTのスクリプト言語やその他の目的で広く用いられている。
-- Node.jsのパッケージ管理ソフトであるnpmコマンドは、JavaScriptのパッケージ管理ソフトとして広く普及
+- パッケージ管理コマンドであるnpmは、JavaScriptのパッケージ管理ソフトとして広く普及
 
 ---
 ## JavaScriptのモダンな開発環境
