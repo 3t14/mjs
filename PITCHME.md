@@ -147,3 +147,19 @@ console.log(decimal);       // 12
 console.log(hex);           // 12
 console.log(octalOld);      // 12
 ```
+
+---
+### テンプレート文字列
+- 文字列リテラルに変数・改行を埋め込むことができる。
+- 文字列リテラルを *バッククォート* “**`**”（**shift** + **@**）で囲む。
+- 改行はそのまま改行、変数は“**${…}**”で埋め込む。
+
+```JavaScript
+var test = "テスト";
+var literalString1 = "文字列\nリテラル" + test; //従来の記述
+var literalString2 = `文字列
+リテラル ${test}`; // 新しく追加された記述方法
+
+console.log(literalString1);
+console.log(literalString2);
+```
