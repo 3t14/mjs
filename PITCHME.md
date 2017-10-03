@@ -7,7 +7,6 @@ Web教材: http://mj.is-good.net
 
 
 ---
-@title[従来の開発環境の問題点]
 ## 従来の開発環境の問題点
 - JavaScript＝JavaScriptエンジン上でコンパイルせずに動作するもの
 - ブラウザ（≒フロントエンド)上で実行するのみ
@@ -49,6 +48,8 @@ exports.increment = function(val) {
 
 // to be continued
 ```
+@[1]
+@[9]
 +++
 
 ### CommonJSにおけるモジュールの定義と利用例
@@ -63,7 +64,7 @@ inc(a);
 
 // end
 ```
-
+@[4]
 ---
 ## Node.jsの登場
 
