@@ -166,7 +166,7 @@ console.log(literalString2);
 ```
 
 ---
-### タグ付きテンプレート文字列
+### タグ付きテンプレート文字列 (1 / 2)
 - 関数を使用して、テンプレート文字列の出力を調整できる
 
 ```JavaScript
@@ -182,4 +182,11 @@ console.log(tag `Title ${title} Category ${category}`);
 // Magazine Title [Automatic operation], Category [Car]
 ```
 
-<a href="https://qiita.com/kura07/items/c9fa858870ad56dfec12" target="_blank">JavaScriptのテンプレートリテラルを極める！</a>
+---
+### タグ付きテンプレート文字列 (2 / 2)
+- 関数tagの引数
+ - **strings**: テンプレート文字列の領域以外を配列化したもの
+ - **values**: テンプレート文字列を順番に配列化したもの
+- 前ページの例
+ - strings: ["Title ", " Category "]
+ - values: ["Automatic operation", "Car"]
