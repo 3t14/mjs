@@ -464,7 +464,7 @@ console.log(test2(1,2,3)); // [1, 2, 3, 4]
 function test3(a){
 	return arguments;
 }
-console.log(test3(1,2,3)); // [1, 2, 3, 4]
+console.log(test3(1,2,3)); // [1, 2, 3]
 
 function test4(a){
 	arguments.push(4); // NG
