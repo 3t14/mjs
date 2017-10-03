@@ -34,6 +34,11 @@ Web教材: http://mj.is-good.net
 ### 外部JSファイルの組み込み方
 #### "Hello, World!"出力の記述例
 
+- 外部JSファイルの記述例
+```javascript
+document.writeln('Hello, World!');
+```
+
 ```HTML
 <html>
 <head>
@@ -44,10 +49,7 @@ Web教材: http://mj.is-good.net
 </body>
 </html>
 ```
-- 外部JSファイルの記述例
-```javascript
-document.writeln('Hello, World!');
-```
+
 @[5](script開始タグ)
 @[5](srcにファイルパス)
 @[5](charsetに文字コード)
