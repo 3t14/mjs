@@ -434,3 +434,25 @@ var a = function (引数1, 引数2, … 引数n){
     [return 戻り値];
 }
 ```
+
+---
+## 引数のデフォルト値 (1 / 3)
+ - 引数にデフォルト値を設定できるようになった
+ - デフォルト値はその後ろのデフォルト値で使用可能
+
+
+```JavaScript
+function test(a = 1, b = 2) {
+	return a * b;
+}
+
+console.log(test());	// 2
+console.log(test(2, 3));	//6
+
+function test2(a = 1, b = a) {
+	return a * b;
+}
+
+console.log(test2());		// 1
+console.log(test2(2));	// 4
+```
