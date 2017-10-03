@@ -241,8 +241,7 @@ console.log( JSON.stringify(myObj)); // {"key2": "b", "key3":"c"}
 #### 定数としての利用例①
 
 - 下記のようなコードの場合
- - 変数tmpを定数Aと比較しようとすると、A・C・0(ゼロ)の３パターンで一致するため、バグの元となりやすい
-
+ - 変数 *tmp* を定数 *A* と比較しようとすると、*A*・*C*・*0*(ゼロ)の３パターンで一致するため、バグの元となりやすい
 
 ```JavaScript
 const A = 0;
@@ -256,3 +255,21 @@ if (tmp === 0) console.log("tmp = 0");
 if (tmp === C) console.log("tmp = C");
 if (tmp === B) console.log("tmp = B");
 ```
+
+---
+### データ型Symbol (4 / 4)
+#### 定数としての利用例②
+
+- **Symbol** を利用して定数を宣言すると、変数 *tmp* は定数 *A* としか一致させることができない
+
+```JavaScript
+const A = Symbol();
+const B = Symbol();
+
+var tmp = A;
+
+if (tmp === A) console.log("tmp = A");
+if (tmp === B) console.log("tmp = B");
+```
+
+---
