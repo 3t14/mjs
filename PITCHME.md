@@ -178,3 +178,5 @@ function tag(string, ...values) {
 var title = "Automatic operation";
 console.log(tag `Title ${title} Category ${category}`);
 ```
+
+参考: <a href="https://qiita.com/kura07/items/c9fa858870ad56dfec12" target="_blank">JavaScript の テンプレートリテラル を極める！ - Qiita</a>
