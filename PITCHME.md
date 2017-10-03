@@ -34,12 +34,12 @@ Web教材: http://mj.is-good.net
 ### 外部JSファイルの組み込み方
 #### "Hello, World!"出力の記述例
 
-- 外部JSファイルの記述例
-```javascript
-document.writeln('Hello, World!');
-```
 
 ```HTML
+// 外部JSファイルの記述例: test.js
+document.writeln('Hello, World!');
+
+// HTMLファイルの記述例
 <html>
 <head>
 </head>
