@@ -59,10 +59,8 @@ document.writeln('Hello, World!');
 
 ---
 ### HTMLタグでのJavaScriptの記述方法
-
-- URLの先頭に**JavaScript:** と記述することで、その後にJSコードの埋め込みが可能
-
-例1)
+#### URLとしての記述
+- URLの先頭に**JavaScript:** と記述することで、その後にJSコードの埋め込みができる
 ```HTML
 <a href="JavaScript:alert('Hello, World');">
 ダイアログを表示
@@ -73,7 +71,9 @@ document.writeln('Hello, World!');
 +++
 
 ### HTMLタグでのJavaScriptの記述方法
-例2) *img* タグの **onlcick属性** など**on + イベント名** の属性に記述する場合は、**JavaScript:** を記述する必要はない
+#### イベント属性での記述
+- *img* タグの **onlcick属性** など**on + イベント名** のイベント属性に記述する場合は、**JavaScript:** を記述する必要はない
+
 ```HTML
 <img src="sample.png" onclick="alert('Hello, World');" />
 ```
