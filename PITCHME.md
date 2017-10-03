@@ -120,5 +120,5 @@ https://c9.io/pricing
 1. あとは、通常のユーザー登録とほぼ同様
 
 <div align="center">
-<img src="assets/PITCHME-6af44.png" width="70%" />
+<img src="assets/PITCHME-6af44.png" width="60%" />
 </div>
