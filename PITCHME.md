@@ -144,7 +144,7 @@ document.write(‘Hello, World!’); //ここでも可　
 ダイアログを表示
 </a>
 ```
-- 上記の描画結果
+ - 上記の描画結果
 > <a href="JavaScript:alert('Hello, World');">
 ダイアログを表示
 </a>
@@ -153,3 +153,34 @@ document.write(‘Hello, World!’); //ここでも可　
 ```JavaScript
 alert('Hello, World');
 ```
+
+### JavaScriptでの文字列表記
+- 一般的に、シングルクォーテーションの利用を推奨
+ - Google JavaScript Style Guide: http://google-styleguide.googlecode.com/svn/trunk/javascriptguide.xml?showone=Strings#Strings
+- 理由
+ - 要素の属性に代入する際、ダブルクォーテーションを利用すると、正しくタグの解析ができなくなるため。
+
+### ブラウザコンソール
+- モダンなブラウザには、通常**デベロッパーツール** 機能が搭載されており、その中に**Console**の機能が含まれている。
+ - Chrome, Edge, Firefox...
+- 様々なログ出力や、動作確認、デバッグに利用可能
+
++++
+#### Firefoxのコンソール起動方法
+1. メニューボタンをクリック
+1. 開発ツールをクリック
+1. ウェブコンソールをクリック
+
+<div align="center">
+  <img src="/assets/PITCHME-e595a.png" width="50%"/>
+</div>
+
++++
+#### Chromeのコンソール起動方法
+1. メニューボタンをクリック
+1. 開発ツールをクリック
+1. ウェブコンソールをクリック
+
+<div align="center">
+  <img src="/assets/PITCHME-78447.png" width="50%"/>
+</div>
