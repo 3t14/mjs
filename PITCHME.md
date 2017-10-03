@@ -108,8 +108,8 @@ https://c9.io/pricing
 ---
 ## cloud9の利用登録（通常）
 1. https://c9.io にアクセス
-1. メールアドレスを入力し、[Sign Up]をクリック
-1. 名前、ユーザ名などの情報を入力して[Create Account]ボタンをクリック
+1. メールアドレスを入力し、**[Sign Up]** をクリック
+1. 名前、ユーザ名などの情報を入力して **[Create Account]** をクリック
 
 ![](assets/PITCHME-afaf4.png)
 
@@ -136,8 +136,8 @@ https://c9.io/pricing
 
 ---
 ## Node.jsの導入と利用
-- HTML5テンプレートを利用する場合、ワークスペース作成時にNode.jsはあらじめインストールされており即利用可能
-- Node.jsは、JavaScriptのファイルをコマンドラインから呼び出して実行可能
+- HTML5テンプレートを利用する場合、ワークスペース作成時に **Node.js** はあらじめインストールされており即利用可能
+- **Node.js** は、JavaScriptのファイルをコマンドラインから呼び出して実行可能
 
 <div align="center">
 <img src="assets/PITCHME-79fad.png" width="60%" />
@@ -146,13 +146,13 @@ https://c9.io/pricing
 ---
 ## JavaScriptの実行方法
 
-- *node* コマンドを利用してシェルからJavaScriptを実行
+- **node** コマンドを利用してシェルからJavaScriptを実行
 + 例）
  1. ファイル*hello_world.js*を作成し保存する
 ```JavaScript
 console.log('Hello World');
 ```
- 1. *node* コマンドを用いて上記ファイルを実行する
+ 1. **node** コマンドを用いて上記ファイルを実行する
 ```Bash
 $ node hello_world.js
 ```
