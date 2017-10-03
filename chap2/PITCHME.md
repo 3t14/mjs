@@ -113,8 +113,6 @@ Web教材: http://mj.is-good.net
 
 ![](assets/PITCHME-b213d.png)
 
-※ ES6の登場によってaltJSが使われなくなるという訳ではありません。
-
 ---
 ## ブラウザのECMAScript対応状況
 - ECMAScript 6 compatibility tableを見ることで確認可能
