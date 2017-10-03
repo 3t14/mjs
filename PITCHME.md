@@ -24,3 +24,20 @@ Web教材: http://mj.is-good.net
 - import・export 命令
 
 ---
+## let命令（1 / 3）
+- ifやforなどのブロック内(“{}”で囲まれた部分)でのみ有効な変数の宣言に使用。<br />
+	→ ブロックスコープ
+- 今まではブロックスコープの概念が無かった。（varによる宣言は関数内か外かの区別のみ）
+
+```JavaScript
+if (true) {
+	var varValue = "varValue";
+	let letValue = "letValue";
+
+	console.log(varValue); // OK
+	console.log(letValue); // OK
+}
+
+console.log(varValue); // OK
+console.log(letValue); // NG
+```
