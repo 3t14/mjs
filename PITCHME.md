@@ -195,6 +195,7 @@ console.log(tag `Title ${title} Category ${category}`);
 ### データ型 Symbol
 - リテラルによる表現を持たない、新しいプリミティブ型
 - インスタンスが固有で不変
+
 ```JavaScript
 var sym1 = Symbol();
 var sym2 = Symbol('foo');
@@ -206,6 +207,7 @@ console.log( typeof sym1 );	// symbol
 console.log( sym2 === sym3); // false
 console.log( sym4.toString() ); // Symbol(foo2)
 ```
+
 @[1-4](Symbolはnew演算子を使わず宣言)
 @[5](new演算子を用いたためエラー)
 @[7](typeof:データ型を文字列で出力)
