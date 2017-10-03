@@ -344,6 +344,7 @@ switch (a) {
 
 #### forの場合
 - 記述例
+
 ```JavaScript
 // 例1
 for (i=0; i < 10; i++) {
@@ -363,6 +364,7 @@ for (j=10; j > 0; j--) {
 ### 繰り返し構文
 #### whileの場合
 - 記述例
+
 ```JavaScript
 // 例1
 while (i < 10) {
