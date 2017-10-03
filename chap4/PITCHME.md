@@ -174,7 +174,7 @@ alert('Hello, World');
 1. ウェブコンソールをクリック
 
 <div align="center">
-  <img src="/assets/PITCHME-e595a.png" width="50%" />
+<img src="/assets/PITCHME-e595a.png" width="50%" />
 </div>
 
 +++
@@ -184,5 +184,5 @@ alert('Hello, World');
 1. ウェブコンソールをクリック
 
 <div align="center">
-  <img src="/assets/PITCHME-78447.png" width="50%" />
+<img src="/assets/PITCHME-78447.png" width="50%" />
 </div>
