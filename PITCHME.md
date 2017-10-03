@@ -14,7 +14,7 @@ Web教材: http://mj.is-good.net
 - 分割代入
 - 展開演算子
 - for…of 命令
-- アロー関数
+- アロー関数などの関数表現の改善
 
 +++
 ### ES6の新たな仕様 (2 / 2)
@@ -382,4 +382,26 @@ for (let key in a) console.log(key); // 0, 1, 2, key1
 
 // for of
 for (let elem of a) console.log(elem); // 1, 2, 3
+```
+
+---
+## 引数のデフォルト値 (1 / 3)
+ - 引数にデフォルト値を設定できるようになった
+ - デフォルト値はその後ろのデフォルト値で使用可能
+
+
+```JavaScript
+function test(a = 1, b = 2) {
+	return a * b;
+}
+
+console.log(test());	// 2
+console.log(test(2, 3));	//6
+
+function test2(a = 1, b = a) {
+	return a * b;
+}
+
+console.log(test2());		// 1
+console.log(test2(2));	// 4
 ```
