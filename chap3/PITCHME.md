@@ -111,7 +111,9 @@ https://c9.io/pricing
 1. メールアドレスを入力し、**[Sign Up]** をクリック
 1. 名前、ユーザ名などの情報を入力して **[Create Account]** をクリック
 
-![](/assets/PITCHME-afaf4.png)
+<div align="center">
+<img src="/assets/PITCHME-afaf4.png" width="60%" />
+</div>
 
 ---
 ## Cloud9の利用登録（当研修）
@@ -120,7 +122,7 @@ https://c9.io/pricing
 1. あとは、通常のユーザー登録とほぼ同様
 
 <div align="center">
-<img src="/assets/PITCHME-6af44.png" width="50%" />
+<img src="/assets/PITCHME-6af44.png" width="40%" />
 </div>
 
 ---
@@ -131,7 +133,9 @@ https://c9.io/pricing
 </div>
 
 ---
-![](/assets/PITCHME-e8892.png)
+<div align="center">
+<img src="/assets/PITCHME-e8892.png" width="80%" />
+</div>
 
 ---
 ## Node.jsの導入と利用
@@ -183,8 +187,7 @@ $ node hello_world.js
 ![](/assets/PITCHME-bfefc.png)
 
 ---
-## Babelのインストール
-- URL: https://babeljs.io/
+### Babelのインストール
 - Babelは、異なるバージョンのJavaScriptのコードを変換できる **トランスパイラ（トランスコンパイラ）**
 - トランスパイラ **Babel** は、**npm install** コマンドを用いてインストール
 ```
