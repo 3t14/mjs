@@ -86,7 +86,7 @@ Web教材: http://mj.is-good.net
    - 他
 
 <div align="center" >
-<img src="/assets/PITCHME-18f89.png" width="40%" />
+<img src="/assets/PITCHME-18f89.png" width="30%" />
 </div>
 
 ---
