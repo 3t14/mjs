@@ -150,9 +150,10 @@ console.log(octalOld);      // 12
 
 ---
 ### テンプレート文字列
-- 文字列リテラルに変数・改行を埋め込むことができる。
-- 文字列リテラルを *バッククォート* “**`**”（**shift** + **@**）で囲む。
-- 改行はそのまま改行、変数は“**${…}**”で埋め込む。
+- 文字列リテラルに変数・改行を埋め込める手段
+- 文字列リテラルを *バッククォート* “**`**”<br/>（**shift** + **@**）で囲む
+- 改行はそのまま改行文字列を入力
+- 変数は“**${…}**”で埋め込む
 
 ```JavaScript
 var test = "テスト";
@@ -162,4 +163,18 @@ var literalString2 = `文字列
 
 console.log(literalString1);
 console.log(literalString2);
+```
+
+---
+### タグ付きテンプレート文字列
+- 関数を使用して、テンプレート文字列の出力を調整できる
+
+```JavaScript
+function tag(string, ...values) {
+	return "Magazine " + strings[0] + "[" + values[0] + "],"
+										 + strings[1] + "[" + values[1] + "]";
+}
+
+var title = "Automatic operation";
+console.log(tag `Title ${title} Category ${category}`);
 ```
