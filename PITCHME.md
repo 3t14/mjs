@@ -89,7 +89,7 @@ document.write('こんにちは！');
 ```
 
 - HTMLソースは？|
-- 正解|
-```HTML
+- 正解:
+``HTML
 Hello, World!<br />こんにちは！  
-``` |
+``|
