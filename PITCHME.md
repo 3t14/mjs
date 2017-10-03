@@ -105,12 +105,10 @@ Hello, World!<br />こんにちは！
 document.writeln('Hello, World!<br/>');
 document.writeln('こんにちは！');
 ```
-
-
 #### HTMLソース
 
 ```HTML
 Hello, World!<br />
 こんにちは！
 ```
-@[3-30](改行コードが加わる)
+@[10-30](改行コードが加わる)
