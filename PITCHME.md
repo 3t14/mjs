@@ -85,7 +85,7 @@ console.log(b); // 変数bは見えない
 - 書式
 > (無名関数の定義)()
 
-**
+
 ### 即時関数を利用する理由
 - スコープの変数汚染を防ぐ。
 - 即時関数＝使い捨て→外部参照できない。
@@ -102,7 +102,7 @@ console.log(b); // 変数bは見えない
 +++?image=/assets/PITCHME-9f09d.png&size=contain
 
 +++
-### クロージャと即時関数を用いたクラス定義の例
+#### クロージャと即時関数を用いたクラス定義の例
 ```JavaScript
 let MyClass = (function(){
 	// 即時関数内の変数は外部から参照できない。
@@ -115,4 +115,8 @@ let MyClass = (function(){
 	}
 	return MyClass; // 定義したクラスを返す
 })();
+
+let myClass = new MyClass();
+console.log(myClass.prop1); // hoge
+console.log(myClass.secretPropKey); // undefined
 ```
