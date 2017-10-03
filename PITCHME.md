@@ -188,7 +188,20 @@ npm install --save-dev babel-cli
 ---
 ## BabelのES6, ES7の対応化
 - Babelは様々なJavaScriptのトランスコンパイラ
-- 個々の対象言語はnpm intallコマンドを用いてbabel-cliとは別にインストールする必要あり
+- 個々の対象言語は``npm intall``コマンドを用いて **babel-cli** とは別にインストールする必要あり
 - ES6, ES7用パッケージのインストール方法
- - ES6の場合: `` $ npm install --save-dev babel-preset-es2015 ``
- - ES7の場合: `` $ npm install --save-dev babel-preset-es2016 ``
+ - ES6の場合
+  ```
+  $ npm install --save-dev babel-preset-es2015
+  ```
+ - ES7の場合
+  ```
+   $ npm install --save-dev babel-preset-es2016
+  ```
+
+---
+## Babelの設定
+- Babelにデフォルトのコンパイル言語として**ES6**を割り当てるため、*~/.babelrc* ファイルに下記を記述(ES6の場合)
+```json
+{ "presets": ["es2015"] }
+```
