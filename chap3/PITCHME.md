@@ -120,7 +120,7 @@ https://c9.io/pricing
 1. あとは、通常のユーザー登録とほぼ同様
 
 <div align="center">
-<img src="/assets/PITCHME-6af44.png" width="60%" />
+<img src="/assets/PITCHME-6af44.png" width="50%" />
 </div>
 
 ---
@@ -131,7 +131,6 @@ https://c9.io/pricing
 </div>
 
 ---
-## Cloud9の画面構成
 ![](/assets/PITCHME-e8892.png)
 
 ---
