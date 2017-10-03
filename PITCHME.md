@@ -65,14 +65,15 @@ inc(a);
 // end
 ```
 @[4](increment.jsファイルのincrement関数を参照)
+
 ---
 ## Node.jsの登場
 
 - Node.jsはUnixプラットフォーム上で動作するサーバーサイドのJavaScript実行環境
-- 2009年にRyan Dahl氏によって開発。
+- 2009年にRyan Dahl氏によって開発
 - JavaScriptエンジンはGoogle V8を利用
 - Node.jsでは、CommonJSのモジュール機能等の一部仕様を採用
-- 現在はWebSocketやIoTのスクリプト言語やその他の目的で広く用いられている。
+- 現在はWebSocketやIoTのスクリプト言語やその他の目的で広く利用
 - パッケージ管理コマンドであるnpmは、JavaScriptのパッケージ管理ソフトとして広く普及
 
 ---
@@ -82,11 +83,38 @@ inc(a);
  - npmコマンドによるJavaScriptライブラリのパッケージ管理
  - npmコマンドが使えれば、altJSやSassやLESSなどのCSSプリプロセッサ、さらにはトランスパイラ環境も導入が容易！
 
----?image=assets/PITCHME-8087c.png&size=cover
-## 当研修で利用する統合開発環境: Cloud9
+---
+## 当研修で利用する統合開発環境: Cloud9 https://c9.io
 
 - クラウド統合開発環境<br /> <em>“Development As A Service”
 (PaaS型の開発環境を提供）</em>
 - ソースコードを公開してもよいのであれば、無料で無制限のワークスペースの利用が可能
 - Sublime風のタブテキスト編集環境の利用が可能
 - 言語に応じたコード補完機能を提供
+
+---
+## 利用可能なワークスペースのテンプレート
+![](assets/PITCHME-ad0c9.png)
+
+---
+## Cloud9の料金体系
+![](assets/PITCHME-7bfc0.png)
+https://c9.io/pricing
+
+---
+## cloud9の利用登録（通常）
+1. https://c9.ioにアクセス
+1. メールアドレスを入力し、[Sign Up]をクリック
+1. 名前、ユーザ名などの情報を入力して[Create Account]ボタンをクリック
+
+![](assets/PITCHME-afaf4.png)
+
+---
+## Cloud9の利用登録（当研修）
+1. Webアンケートに入力したメールアドレスに、Cloud9の招待メールが送信される
+1. 受信したメールのリンクをクリック
+1. あとは、通常のユーザー登録とほぼ同様
+
+<div align="center">
+<img src="assets/PITCHME-6af44.png" width="70%" />
+</div>
