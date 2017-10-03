@@ -192,7 +192,7 @@ console.log(tag `Title ${title} Category ${category}`);
  - values: ["Automatic operation", "Car"]
 
 ---
-### データ型 Symbol (1 / 3)
+### データ型 Symbol (1 / 4)
 - リテラルによる表現を持たない、新しいプリミティブ型
 - インスタンスが固有で不変
 
@@ -216,7 +216,7 @@ console.log( sym4.toString() ); // Symbol(foo2)
 @[9](Symbol(宣言時の引数値)と出力される)
 
 ---
-### データ型Symbol (2 / 3)
+### データ型Symbol (2 / 4)
 #### プライベートなプロパティとしての利用例
 
 - プロパティのキーとして利用可能
@@ -234,4 +234,25 @@ for (var key in myObj) {
 }
 
 console.log( JSON.stringify(myObj)); // {"key2": "b", "key3":"c"}
+```
+
+---
+### データ型Symbol (3 / 4)
+#### 定数としての利用例①
+
+- 下記のようなコードの場合
+ - 変数tmpを定数Aと比較しようとすると、A・C・0(ゼロ)の３パターンで一致するため、バグの元となりやすい
+
+
+```JavaScript
+const A = 0;
+const B = 1;
+const C = 0;
+
+var tmp = 0;
+
+if (tmp === A) console.log("tmp = A");
+if (tmp === 0) console.log("tmp = 0");
+if (tmp === C) console.log("tmp = C");
+if (tmp === B) console.log("tmp = B");
 ```
