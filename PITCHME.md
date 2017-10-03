@@ -101,9 +101,8 @@ console.log(b); // 変数bは見えない
 
 +++?image=/assets/PITCHME-9f09d.png&size=contain
 
-+++
-#### クロージャと即時関数を用いたクラス定義の例
 +++?gist=3t14/22a7948b4691a20fb0b42b14a19e9fa3&lang=JavaScript
+クロージャと即時関数を用いたクラス定義の例
 
 @[3](Symbolのキーにより外部参照が不可に)
 @[14](secretPropKeyの変数は参照できない)
