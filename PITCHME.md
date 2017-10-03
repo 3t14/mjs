@@ -420,3 +420,19 @@ function test3(a, b) { // ES6以前の対応方法
 console.log(test3());		// 2
 console.log(test3(3));	// 6
 ```
+
+---
+## 引数のデフォルト値 (3 / 3)
+ - **undefined** が指定された場合は、デフォルト引数が適用される
+ - **null** や **false** が指定された場合は、デフォルト引数は無視される
+
+
+```JavaScript
+function test4(a = 1, b = 2) { // ES6以前の対応方法
+	return a * b;
+}
+
+console.log(test4(2, undefined));		// 2
+console.log(test4(2, null));	// 0
+console.log(test4(2, false));	// 0 : falseも未定義として扱われる
+```
