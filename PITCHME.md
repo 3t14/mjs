@@ -156,3 +156,17 @@ console.log('Hello World');
 ```Bash
 $ node hello_world.js
 ```
+
+---
+## npmコマンドの利用方法 ①
+### 作業ディレクトリの初期化
+```Bash
+ $ npm init
+```
+- 上記コマンドを実行するとパッケージに関する情報として、パッケージ名、Version等について問い合わせあり
+- 未定の場合は全て改行コードを入力してもよい
+ - のちの修正は結果として生成される **package.json** ファイルを編集すればよい
+
++++
+## package.jsonの例
+![](assets/PITCHME-bfefc.png)
