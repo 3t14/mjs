@@ -133,3 +133,27 @@ https://c9.io/pricing
 ---
 ## Cloud9の画面構成
 ![](assets/PITCHME-e8892.png)
+
+---
+## Node.jsの導入と利用
+- HTML5テンプレートを利用する場合、ワークスペース作成時にNode.jsはあらじめインストールされており即利用可能
+- Node.jsは、JavaScriptのファイルをコマンドラインから呼び出して実行可能
+
+<div align="center">
+<img src="assets/PITCHME-79fad.png" width="60%" />
+</div>
+
+---
+## JavaScriptの実行方法
+
+- nodeコマンドを利用してシェルからJavaScriptを実行
+
+例）
+1. ファイルhello_world.jsを作成し保存する
+```JavaScript
+console.log('Hello World');
+```
+1. nodeコマンドを用いて上記ファイルを実行する
+```Bash
+$ node hello_world.js
+```
