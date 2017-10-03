@@ -273,3 +273,38 @@ if (tmp === B) console.log("tmp = B");
 ```
 
 ---
+### 分割代入 (1 / 3)
+
+- 右辺の配列やオブジェクトの各要素・プロパティを、左辺の個々の変数に展開
+
+```JavaScript
+var [a, b, ...others] = [1, 2, 3, 4, 5];
+console.log(a); // 1
+console.log(b); // 2
+console.log(c); //[3, 4, 5]
+
+var {key1, key2} = {key1: 'value1', key2: 'value2'};
+console.log(key1); // value1
+console.log(key2); // value2
+```
+
+---
+### 分割代入 (2 / 3)
+
+- 名前付き引数を指定
+
+```JavaScript
+function teset({a= 1, b = 2}){
+	return a * b;
+}
+console.log( test({a:3, b:4}));
+```
+
+- 変数の値を入れ替える
+
+```JavaScript
+var [a, b] = [1, 2];
+[a, b] = [b, a];
+console.log(a); // 2
+console.log(a); // 1
+```
