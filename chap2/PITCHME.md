@@ -117,6 +117,7 @@ Web教材: http://mj.is-good.net
 ## ブラウザのECMAScript対応状況
 - ECMAScript 6 compatibility tableを見ることで確認可能
 https://kangax.github.io/compat-table/es6/
+
 <div width="100%" align="center">
 <img alt="ES6 compativility table" src="/assets/PITCHME-d3c5f.png" width="75%" />
 </div>
