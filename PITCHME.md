@@ -160,6 +160,8 @@ alert('Hello, World');
 - 理由
  - 要素の属性に代入する際、ダブルクォーテーションを利用すると、正しくタグの解析ができなくなるため。
 
+---
+
 ### ブラウザコンソール
 - モダンなブラウザには、通常**デベロッパーツール** 機能が搭載されており、その中に**Console**の機能が含まれている。
  - Chrome, Edge, Firefox...
@@ -172,7 +174,7 @@ alert('Hello, World');
 1. ウェブコンソールをクリック
 
 <div align="center">
-  <img src="assets/PITCHME-e595a.png" width="150%"/>
+  <img src="/assets/PITCHME-e595a.png" width="50%" />
 </div>
 
 +++
@@ -182,5 +184,5 @@ alert('Hello, World');
 1. ウェブコンソールをクリック
 
 <div align="center">
-  <img src="assets/PITCHME-78447.png" width="150%"/>
+  <img src="/assets/PITCHME-78447.png" width="50%" />
 </div>
