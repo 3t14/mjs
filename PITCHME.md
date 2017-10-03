@@ -133,3 +133,23 @@ document.write(‘Hello, World!’); //ここでも可　
 作成者：山田 太郎
 */
 ```
+---
+
+### alertダイアログ
+
+#### 例："Hello, World!"のダイアログ表示
+- HTMLタグ属性への記述例
+```HTML
+<a href="JavaScript:alert('Hello, World');">
+ダイアログを表示
+</a>
+```
+- 上記の描画結果
+> <a href="JavaScript:alert('Hello, World');">
+ダイアログを表示
+</a>
+
+- JavaScriptファイルなどでの記述例
+```JavaScript
+alert('Hello, World');
+```
