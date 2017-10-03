@@ -405,3 +405,18 @@ function test2(a = 1, b = a) {
 console.log(test2());		// 1
 console.log(test2(2));	// 4
 ```
+
+---
+## 引数のデフォルト値 (2 / 3)
+ - デフォルト引数が設定されていなければ、**undefined** がデフォルト値になる
+
+```JavaScript
+function test3(a, b) { // ES6以前の対応方法
+	a = typeof a !== 'undefined' ? a : 1; // 未定義なら1
+	b = typeof b !== 'undefined' ? b : 1; // 未定義なら1
+	return a * b;
+}
+
+console.log(test3());		// 2
+console.log(test3(3));	// 6
+```
