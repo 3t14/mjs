@@ -111,4 +111,5 @@ document.writeln('こんにちは！');
 Hello, World!<br />
 こんにちは！
 ```
+@[1,2](writeln関数を用いると)
 @[10-30](改行コードが加わる)
