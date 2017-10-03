@@ -75,5 +75,5 @@ document.writeln('Hello, World!');
 - *img* タグの **onlcick属性** など**on + イベント名** のイベント属性に記述する場合は、**JavaScript:** を記述する必要はない
 
 ```HTML
-<img src="画像ファイルパス" onclick="alert('Hello, World');" />
+<img　src="画像ファイルパス" onclick="alert('Hello, World');" />
 ```
