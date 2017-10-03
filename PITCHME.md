@@ -122,3 +122,9 @@ https://c9.io/pricing
 <div align="center">
 <img src="assets/PITCHME-6af44.png" width="60%" />
 </div>
+
+## ワークスペースの作成
+- この研修ではテンプレートとしてHTML5を選択してください。
+<div align="center">
+<img src="assets/PITCHME-ebc25.png" width="70%" />
+</div>
