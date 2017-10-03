@@ -81,13 +81,14 @@ document.writeln('Hello, World!');
 
 ---
 ### HTMLへの文字列の動的出力
-### 例1: **docuement.write** で文字列を記述する場合
+例1: **docuement.write** で文字列を記述する場合
+
 ```JavaScript
 document.write('Hello, World!<br/>');
 document.write('こんにちは！');
 ```
 
-- HTMLソースは？|
- - ```HTML
+HTMLソースは？|
+```HTML
 Hello, World!<br />こんにちは！  
-```
+```|
