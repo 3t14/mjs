@@ -84,10 +84,6 @@ Web教材: http://mj.is-good.net
    - アロー関数が利用できない
    - 分割代入（タプル）
 
-<div align="center" >
-<img src="/assets/PITCHME-18f89.png" width="20%" />
-</div>
-
 ---
 
 ## altJS（オルトジェイエス）
