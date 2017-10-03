@@ -353,13 +353,33 @@ console.log(args2); //4, 1, 2, 3, 5, 6
 ```
 
 ---
-### for 〜 of 構文 (1 / 2)
-#### **for 〜 in** との違い
+### for 〜 of 構文 (1 / 3)
+#### **for 〜 in 構文** との違い
 - **for 〜 in 構文**
  - オブジェクト内にある、すべての列挙可能(Enumerable)なプロパティを列挙
 - **for 〜 of 構文**
- - 反復可能(Iterable)なオブジェクトが持つ値のみを列挙
+ - 反復列挙可能(Iterable)なオブジェクトが持つ値のみを列挙
+
+---
+### for 〜 of 構文 (2 / 3)
+#### 利用可能なデータ型
 - 要素の反復列挙可能なビルトインデータ型
  - **Array**, **TypedArray**, **String**, **Map**, **Set**
 - 要素の反復列挙不可能なビルトインデータ型
  - **Object**
+
+---
+### for 〜 of 構文 (3 / 3)
+#### 参照する値の違い
+- **for 〜 in 構文** は添字（インデックスやプロパティ名）を参照
+- **for 〜 of 構文** は要素を参照
+
+```JavaScript
+var a = [1, 2, 3];
+Array.prototype.key1 = "value1";
+// for in
+for (let i in a) console.log(i); // 0, 1, 2, key
+
+// for of
+for (let i of a) console.log(i); // 1, 2, 3
+```
