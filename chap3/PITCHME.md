@@ -94,12 +94,12 @@ inc(a);
 
 ---
 ## 利用可能なワークスペースのテンプレート
-![](assets/PITCHME-ad0c9.png)
+![](/assets/PITCHME-ad0c9.png)
 
 ---
 ## Cloud9の料金体系
 <div align="center">
-<img src="assets/PITCHME-7bfc0.png" width="80%"/>
+<img src="/assets/PITCHME-7bfc0.png" width="80%"/>
 <br />
 https://c9.io/pricing
 </div>
@@ -111,7 +111,7 @@ https://c9.io/pricing
 1. メールアドレスを入力し、**[Sign Up]** をクリック
 1. 名前、ユーザ名などの情報を入力して **[Create Account]** をクリック
 
-![](assets/PITCHME-afaf4.png)
+![](/assets/PITCHME-afaf4.png)
 
 ---
 ## Cloud9の利用登録（当研修）
@@ -120,19 +120,19 @@ https://c9.io/pricing
 1. あとは、通常のユーザー登録とほぼ同様
 
 <div align="center">
-<img src="assets/PITCHME-6af44.png" width="60%" />
+<img src="/assets/PITCHME-6af44.png" width="60%" />
 </div>
 
 ---
 ## ワークスペースの作成
 - この研修ではテンプレートとしてHTML5を選択してください。
 <div align="center">
-<img src="assets/PITCHME-ebc25.png" width="70%" />
+<img src="/assets/PITCHME-ebc25.png" width="70%" />
 </div>
 
 ---
 ## Cloud9の画面構成
-![](assets/PITCHME-e8892.png)
+![](/assets/PITCHME-e8892.png)
 
 ---
 ## Node.jsの導入と利用
@@ -140,7 +140,7 @@ https://c9.io/pricing
 - **Node.js** は、JavaScriptのファイルをコマンドラインから呼び出して実行可能
 
 <div align="center">
-<img src="assets/PITCHME-79fad.png" width="60%" />
+<img src="/assets/PITCHME-79fad.png" width="60%" />
 </div>
 
 ---
@@ -181,7 +181,7 @@ $ node hello_world.js
 
 +++
 ## package.jsonの例
-![](assets/PITCHME-bfefc.png)
+![](/assets/PITCHME-bfefc.png)
 
 ---
 ## Babelのインストール
@@ -193,7 +193,7 @@ npm install --save-dev babel-cli
 ```
 - ``---save-dev``オプションを加えることで *pacakge.json* に開発時に必要なパッケージとして追記（更新）される
 <div align="center">
-<img src="assets/PITCHME-78607.png" width="40%" />
+<img src="/assets/PITCHME-78607.png" width="40%" />
 </div>
 ---
 ## BabelのES6, ES7の対応化
@@ -226,7 +226,7 @@ $ babel ES6のファイルパス > 変換後のファイルパス
 $ babel test.es6 > test.js
 ```
 <div align="center">
-<img src="assets/PITCHME-2caaa.png" width="50%" />
+<img src="/assets/PITCHME-2caaa.png" width="50%" />
 </div>
 
 ---
