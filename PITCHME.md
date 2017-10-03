@@ -25,8 +25,8 @@ Web教材: http://mj.is-good.net
 
 ---
 ### let命令（1 / 3）
-- ifやforなどのブロック内(“{}”で囲まれた部分)でのみ有効な変数の宣言に使用。<br />
-	→ ブロックスコープ
+- **if** や **for** などのブロック内(“**{}**”で囲まれた部分)でのみ有効な変数の宣言に使用。<br />
+	→ **ブロックスコープ**
 - 今まではブロックスコープの概念が無かった。（varによる宣言は関数内か外かの区別のみ）
 
 ```JavaScript
@@ -41,3 +41,21 @@ if (true) {
 console.log(varValue); // OK
 console.log(letValue); // NG
 ```
+
+---
+### let命令（2 / 3）
+-  **switch** ブロック内で使用する場合は、全体で一つのブロックなので注意
+
+```JavaScript
+var num = 1;
+switch (num) {
+	case 0:
+		let a = "num = 0 ";
+		break;
+	case 1:
+		let a = "num = 1"; // NG
+		break;
+}
+```
+@[4](最初の宣言なのでOK)
+@[7](2回目の宣言なのでNG)
