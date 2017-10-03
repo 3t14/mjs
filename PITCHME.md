@@ -77,7 +77,8 @@ document.writeln('Hello, World!');
 ```HTML
 <img　src="sample.png"　onclick="alert('Hello, World');" />
 ```
-----
+
+---
 ### HTMLへの文字列の動的出力
 ### 例1: **docuement.write** で文字列を記述する場合
 ```JavaScript
