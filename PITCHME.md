@@ -105,4 +105,26 @@ console.log(b); // 変数bは見えない
 クロージャと即時関数を用いたクラス定義の例
 
 @[3](Symbolのキーにより外部参照が不可に)
-@[14](secretPropKeyの変数は参照できない)
+@[15](secretPropKeyの変数は参照できない)
+
+---
+### const命令
+- 定数（再代入ができない変数）の宣言に使用
+- **let** と同じく、スコープは **ブロック単位**
+
+```JavaScript
+if (true) {
+	const constValue = "const";
+	console.log(constValue);
+	constValue = "const test"; // NG
+}
+console.log(constValue);
+
+const constValue = [0, 2];
+constValue[1] = 3;
+console.log(constValue);
+```
+@[2, 7](定数宣言)
+@[4](定数は再代入不可)
+@[6](定数だとしても、ブロック外からの参照不可)
+@[9](配列の要素は、定数ではない)
