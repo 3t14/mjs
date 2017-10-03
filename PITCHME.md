@@ -30,7 +30,7 @@ Web教材: http://mj.is-good.net
 ### CommonJSにおけるモジュールの定義と利用例
 
 ```JavaScript
-// add.js
+// math.js
 module.exports.add = function() {
   var sum = 0, i = 0, args = arguments, l = args.length;
   while (i < l) {
@@ -48,8 +48,8 @@ exports.increment = function(val) {
 
 // to be continued
 ```
-@[1]
-@[9]
+@[2](add関数を外部に公開)
+@[11](math.jsファイルのadd関数を参照)
 +++
 
 ### CommonJSにおけるモジュールの定義と利用例
@@ -64,7 +64,7 @@ inc(a);
 
 // end
 ```
-@[4]
+@[4](increment.jsファイルのincrement関数を参照)
 ---
 ## Node.jsの登場
 
