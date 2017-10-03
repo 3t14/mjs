@@ -90,10 +90,14 @@ document.write('こんにちは！');
 ```
 
 <div class="fragment">
-HTMLソースは？
+HTMLソース
 </div>
+
+
 <div class="fragment">
-```HTML
+
+```html
 Hello, World!<br />こんにちは！
 ```
+
 </div>
