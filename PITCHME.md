@@ -436,3 +436,39 @@ console.log(test4(2, undefined));		// 2
 console.log(test4(2, null));	// 0
 console.log(test4(2, false));	// 0 : falseも未定義として扱われる
 ```
+
+---
+## 可変長引数
+ - **Array** オブジェクトとして扱われるため、**Array** の標準メソッドが利用可能
+ - 従来の **arguments** オブジェクト
+  - 引数オブジェクト
+  - 配列と似ているが、配列操作ができない
+
+```JavaScript
+function test(...a){
+	return a;
+}
+console.log(test(1,2,3)); // [1, 2, 3]
+
+```
+
++++
+
+```JavaScript
+function test2(...a){
+	a.push(4);
+	return a;
+}
+console.log(test2(1,2,3)); // [1, 2, 3, 4]
+
+function test3(a){
+	return arguments;
+}
+console.log(test3(1,2,3)); // [1, 2, 3, 4]
+
+function test4(a){
+	arguments.push(4); // NG
+	return arguments;
+}
+console.log(test4(1,2,3)); // NG
+```
