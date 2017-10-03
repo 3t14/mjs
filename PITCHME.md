@@ -7,8 +7,8 @@ Web教材: http://mj.is-good.net
 
 
 ---
-## HTML内部にでのJSの組み込み方
-### "Hello, World!"出力の記述例
+### HTML内部でのJSの組み込み方
+#### "Hello, World!"出力の記述例
 
 ```HTML
 <html>
