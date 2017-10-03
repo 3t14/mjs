@@ -291,7 +291,7 @@ console.log(key2); // value2
 ---
 ### 分割代入 (2 / 3)
 
-- 名前付き引数を指定
+#### 名前付き引数を指定
 
 ```JavaScript
 function teset({a= 1, b = 2}){
@@ -300,7 +300,7 @@ function teset({a= 1, b = 2}){
 console.log( test({a:3, b:4}));
 ```
 
-- 変数の値を入れ替える
+#### 変数の値を入れ替える
 
 ```JavaScript
 var [a, b] = [1, 2];
@@ -308,3 +308,21 @@ var [a, b] = [1, 2];
 console.log(a); // 2
 console.log(a); // 1
 ```
+
+----
+### 分割代入 (3 / 3)
+#### 正規表現
+
+```JavaScript
+var text = "11-22";
+var pattern = /^(.+)-(.+)$/;
+var [a, b, c] = pattern.exec(text);
+console.log(a); // 11-22
+console.log(b); // 11
+console.log(c); // 22
+```
+@[2](ハイフン区切りで分割)
+@[3](分割した結果を代入)
+@[4](第0要素は全ての文字列)
+@[5](第1要素は分割後の最初の文字列)
+@[6](第2要素は分割後の最後の文字列)
