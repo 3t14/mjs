@@ -170,14 +170,16 @@ console.log(literalString2);
 - 関数を使用して、テンプレート文字列の出力を調整できる
 
 ```JavaScript
-function tag(string, ...values) {
+function tag(strings, ...values) {
 	return "Magazine " + strings[0] + "[" + values[0] + "],"
 										 + strings[1] + "[" + values[1] + "]";
 }
 
 var title = "Automatic operation";
 var category = "Car";
+
 console.log(tag `Title ${title} Category ${category}`);
+// Magazine Title [Automatic operation], Category [Car]
 ```
 
-参考: <a href="https://qiita.com/kura07/items/c9fa858870ad56dfec12" target="_blank">JavaScriptのテンプレートリテラルを極める！</a>
+<a href="https://qiita.com/kura07/items/c9fa858870ad56dfec12" target="_blank">JavaScriptのテンプレートリテラルを極める！</a>
