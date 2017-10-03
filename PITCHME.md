@@ -25,9 +25,31 @@ Web教材: http://mj.is-good.net
 </html>
 ```
 @[5, 9](scriptタグ、scriptの種類をtype属性に記入)
-@[6-8](scriptタグ未対応ブラウザのためにコメントアウトを記述)
+@[6-8](scriptタグ未対応ブラウザのためにコメントアウト)
 @[6-8](その中にJSを記述)
 @[7](body内部にHello, World+改行コードを動的に出力)
 @[10](JSが利用できないブラウザ上で出力される内容)
 
 ---
+### 外部JSファイルのHTML上での組み込み方
+#### "Hello, World!"出力の記述例
+
+```HTML
+<html>
+<head>
+</head>
+<body>
+<script type=“text/javascript” src="test.js" charset="utf-8">
+</script>
+</body>
+</html>
+```
+@[5](script開始タグ)
+@[5](srcにファイルパス)
+@[5](charsetに文字コード)
+@[6](空要素タグではなく、必ず終了タグを記述する)
+
+- 外部JSファイルの記述例
+```javascript
+document.writeln('Hello, World!');
+```
