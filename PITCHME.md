@@ -80,7 +80,7 @@ inc(a);
  - npmコマンドによるJavaScriptライブラリのパッケージ管理
  - npmコマンドが使えれば、altJSやSassやLESSなどのCSSプリプロセッサ、さらにはトランスパイラ環境も導入が容易！
 
----?image=assets/PITCHME-8087c.png
+---?image=assets/PITCHME-8087c.png&size=cover
 ## 当研修で利用する統合開発環境: Cloud9
 
 - クラウド統合開発環境<br /> <em>“Development As A Service”
