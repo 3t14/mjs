@@ -88,7 +88,7 @@ document.write('Hello, World!<br/>');
 document.write('こんにちは！');
 ```
 
-HTMLソースは？|
-```HTML
+- HTMLソースは？|
+- ```HTML
 Hello, World!<br />こんにちは！  
 ```|
