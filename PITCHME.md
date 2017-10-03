@@ -230,7 +230,7 @@ $ babel test.es6 > test.js
 </div>
 
 ---
-## Cloud9におけるNode.jsのアップグレード
+### Cloud9におけるNode.jsのアップグレード
 - *Node.js* のバージョンの確認方法
 ```
 $ node -v
