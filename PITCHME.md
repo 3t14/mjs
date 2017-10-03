@@ -192,7 +192,7 @@ console.log(tag `Title ${title} Category ${category}`);
  - values: ["Automatic operation", "Car"]
 
 ---
-### データ型 Symbol
+### データ型 Symbol (1 / 3)
 - リテラルによる表現を持たない、新しいプリミティブ型
 - インスタンスが固有で不変
 
@@ -214,3 +214,24 @@ console.log( sym4.toString() ); // Symbol(foo2)
 @[8](引数の文字列は識別子ではなく、デバッグ用)
 @[8](同一の文字列を指定してもエラーが発生)
 @[9](Symbol(宣言時の引数値)と出力される)
+
+---
+### データ型Symbol (2 / 3)
+#### プライベートなプロパティとしての利用例
+
+- プロパティのキーとして利用可能
+- **for…in** イテレーションや **JSON.stringfy()** メソッドで出力されない
+
+
+```JavaScript
+var myObj = {};
+myObj[Symbol("key1")] = "a";
+myObj["key2"] = "b";
+myObj["key3"] = "c";
+
+for (var key in myObj) {
+	console.log(myObj[key]); // "b" and "c"
+}
+
+console.log( JSON.stringify(myObj)); // {"key2": "b", "key3":"c"}
+```
