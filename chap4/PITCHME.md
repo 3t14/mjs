@@ -231,8 +231,70 @@ var i = 123; // iを宣言し、初期値123を代入
 
 ---
 ### プリミティブ型
-![](/assets/PITCHME-e7e1b.png)
+![](/assets/PITCHME-b7ed0.png)
 
 <div style="font-size: 20pt">
 参考: https://developer.mozilla.org/ja/docs/Web/JavaScript/Data_structures
 </div>
+
+---
+### オブジェクト型
+![](/assets/PITCHME-8234f.png)
+
+<div style="font-size: 20pt">
+参考: https://developer.mozilla.org/ja/docs/Web/JavaScript/Data_structures
+</div>
+---
+
+
+---
+### 代入演算子
+- 変数に数値や文字列を格納することを代入と呼び、代入を行う際に記述す る“**=**” を **代入演算子** と呼ぶ。
+
+- 記述例
+
+```JavaScript
+word = “Hello, World!”;
+dog = 3;
+cat = 0.44;
+```
+
+----
+### 配列
+- 複数の数値や文字列を扱うためのデータ構造
+
+- 記述例
+```JavaScript
+var array1 = [1, 2, 3, 4, 5];
+var array2 = [“a”, “b”, “c”, “d”];
+```
+
+----
+### オブジェクト(連想配列)
+- **キー** に関連付けてデータを格納するデータ構造
+- **値** として **無名関数** を割り当てた場合、**関数（メソッド）** として利用可能
+
+- 記述例
+```JavaScript
+var object1 = {“apple”:1, “melon”:3, “orange”:2};
+var object2 = {“firstname”: “taro”, “lastname”:”yamada”};
+```
+
+
+----
+### 比較演算子
+- 2つの値について、等しい・大小や文字列の一致などの比較を行い、成立した場合は **真（True）** 、成立しない場合は **偽（False）** となる
+- 条件文や繰り返し構文において、条件式として用いる
+
+- 比較演算子の例
+
+|判定内容|演算子|
+|:---|:---:|
+|等しい|==|
+
+等しくない 							⇒　!=
+より大きい  						⇒　>
+より大きいまたは等しい(以上) 	⇒　>=
+より小さい  						⇒　<
+より小さいまたは等しい(以下) 	⇒　<=
+```
