@@ -56,3 +56,15 @@ document.writeln('Hello, World!');
 @[9](srcにファイルパス)
 @[9](charsetに文字コード)
 @[9](空要素タグではなく、必ず終了タグを記述する)
+
+---
+### HTMLタグでのJavaScriptの記述方法
+
+- URLの先頭にJavaScript:と記述しtable、その後にJSコードの埋め込みが可能
+
+```HTML
+<a href=“JavaScript:window.alert(‘Hello, World’);”>
+ダイアログを表示
+</a>
+```
+@[1, 3](リンクをクリックするとダイアログが表示)
