@@ -188,7 +188,7 @@ $ node hello_world.js
 
 ---
 ### Babelのインストール
-- Babelは、異なるバージョンのJavaScriptのコードを変換できる **トランスパイラ（トランスコンパイラ）**
+- 異なるバージョンのJavaScriptのコードを変換できる **トランスパイラ（トランスコンパイラ）**
 - トランスパイラ **Babel** は、**npm install** コマンドを用いてインストール
 ```
 npm install --save-dev babel-cli
@@ -197,6 +197,7 @@ npm install --save-dev babel-cli
 <div align="center">
 <img src="/assets/PITCHME-78607.png" width="40%" />
 </div>
+
 ---
 ## BabelのES6, ES7の対応化
 - Babelは様々なJavaScriptのトランスコンパイラ
