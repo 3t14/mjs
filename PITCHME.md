@@ -98,8 +98,12 @@ inc(a);
 
 ---
 ## Cloud9の料金体系
-![](assets/PITCHME-7bfc0.png)
+<div align="center">
+<img src="assets/PITCHME-7bfc0.png" width="80%"/>
+<br />
 https://c9.io/pricing
+</div>
+
 
 ---
 ## cloud9の利用登録（通常）
