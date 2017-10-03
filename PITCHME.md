@@ -92,7 +92,7 @@ document.write('こんにちは！');
 <div align="left">
 
 - HTMLソース |
-- ```html
+```html
 Hello, World!<br />こんにちは！
 ```
 
