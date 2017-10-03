@@ -31,7 +31,7 @@ Web教材: http://mj.is-good.net
 @[10](JSが利用できないブラウザ上で出力される内容)
 
 ---
-### 外部JSファイルのHTML上での組み込み方
+### 外部JSファイルの組み込み方
 #### "Hello, World!"出力の記述例
 
 ```HTML
@@ -44,12 +44,12 @@ Web教材: http://mj.is-good.net
 </body>
 </html>
 ```
-@[5](script開始タグ)
-@[5](srcにファイルパス)
-@[5](charsetに文字コード)
-@[6](空要素タグではなく、必ず終了タグを記述する)
-
 - 外部JSファイルの記述例
 ```javascript
 document.writeln('Hello, World!');
 ```
+@[5](script開始タグ)
+@[5](srcにファイルパス)
+@[5](charsetに文字コード)
+@[5](空要素タグではなく、必ず終了タグを記述する)
+@[9](HTMLタグは不要、指定された文字コードで作成)
