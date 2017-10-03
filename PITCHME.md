@@ -98,6 +98,5 @@ console.log(b); // 変数bは見えない
  - 関数自身を戻り値とする関数
  - 外部参照不可能な変数の定義
  - 定義後にも、戻り値として返した関数内部から、外部参照不可能変数への参照が可能
-<div align="center">
-<img src="/assets/PITCHME-9f09d.png" width="20%" />
-</div>
+
++++?image=/assets/PITCHME-9f09d.png?size=cover
