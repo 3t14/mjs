@@ -129,3 +129,6 @@ https://c9.io/pricing
 <div align="center">
 <img src="assets/PITCHME-ebc25.png" width="70%" />
 </div>
+
+## Cloud9の画面構成
+![](assets/PITCHME-e8892.png)
