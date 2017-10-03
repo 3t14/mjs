@@ -91,7 +91,8 @@ document.write('こんにちは！');
 
 <div align="left">
 
-- HTMLソース |
+- HTMLソース
+
 ```html
 Hello, World!<br />こんにちは！
 ```
