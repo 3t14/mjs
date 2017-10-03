@@ -223,10 +223,12 @@ var i = 123; // iを宣言し、初期値123を代入
 - オブジェクト
  - プロパティのセット
  - プロパティは、追加削除可能
-
-参考: https://developer.mozilla.org/ja/docs/Web/JavaScript/Data_structures
+- 参考
+ - https://developer.mozilla.org/ja/docs/Web/JavaScript/Data_structures
 
 ---
 ### プリミティブ型
-![](assets/PITCHME-e7e1b.png)
+![](/assets/PITCHME-e7e1b.png)
+<div style="font-size: 7pt">
 参考: https://developer.mozilla.org/ja/docs/Web/JavaScript/Data_structures
+</div>
