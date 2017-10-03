@@ -146,14 +146,13 @@ https://c9.io/pricing
 ---
 ## JavaScriptの実行方法
 
-- nodeコマンドを利用してシェルからJavaScriptを実行
-
-例）
-1. ファイルhello_world.jsを作成し保存する
+- *node* コマンドを利用してシェルからJavaScriptを実行
++ 例）
+ 1. ファイル*hello_world.js*を作成し保存する
 ```JavaScript
 console.log('Hello World');
 ```
-1. nodeコマンドを用いて上記ファイルを実行する
+ 1. *node* コマンドを用いて上記ファイルを実行する
 ```Bash
 $ node hello_world.js
 ```
