@@ -6,8 +6,8 @@
 Web教材: http://mj.is-good.net
 
 ---
-### ES6の新たな仕様
-- let・const 命令
+### ES6の新たな仕様 (1 / 2)
+- let / const 命令
 - 2進数と8進数リテラル
 - テンプレート文字列とタグ付きテンプレート文字
 - Symbol型
@@ -15,6 +15,9 @@ Web教材: http://mj.is-good.net
 - 展開演算子
 - for…of 命令
 - 関数構文の改善
+
++++
+### ES6の新たな仕様 (2 / 2)
 - Promise、コレクション、Proxyオブジェクト
 - class 命令
 - イテレーター・ジェネレータ
