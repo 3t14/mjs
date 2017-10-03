@@ -89,8 +89,11 @@ document.write('Hello, World!<br/>');
 document.write('こんにちは！');
 ```
 
+<div align="left">
+
 - HTMLソース |
 ```html
 Hello, World!<br />こんにちは！
 ```
+
 </div>
