@@ -83,7 +83,6 @@ Web教材: http://mj.is-good.net
  - モダンシンタックス表現に対応していない
    - アロー関数が利用できない
    - 分割代入（タプル）
-   - 他
 
 <div align="center" >
 <img src="/assets/PITCHME-18f89.png" width="30%" />
