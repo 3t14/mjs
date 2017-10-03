@@ -89,7 +89,9 @@ document.write('Hello, World!<br/>');
 document.write('こんにちは！');
 ```
 
-## HTMLソースは？
+<div class="fragment">
+HTMLソースは？
+</div>
 <div class="fragment">
 ```HTML
 Hello, World!<br />こんにちは！
