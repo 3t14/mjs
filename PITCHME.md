@@ -14,7 +14,7 @@ Web教材: http://mj.is-good.net
 - 分割代入
 - 展開演算子
 - for…of 命令
-- 関数構文の改善
+- アロー関数
 
 +++
 ### ES6の新たな仕様 (2 / 2)
@@ -378,8 +378,8 @@ console.log(args2); //4, 1, 2, 3, 5, 6
 var a = [1, 2, 3];
 Array.prototype.key1 = "value1";
 // for in
-for (let i in a) console.log(i); // 0, 1, 2, key
+for (let key in a) console.log(key); // 0, 1, 2, key1
 
 // for of
-for (let i of a) console.log(i); // 1, 2, 3
+for (let elem of a) console.log(elem); // 1, 2, 3
 ```

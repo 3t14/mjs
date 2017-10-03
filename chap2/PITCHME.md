@@ -75,7 +75,7 @@ Web教材: http://mj.is-good.net
 
 ---
 
-## 旧式JavaScriptの問題点
+### 旧式JavaScriptの問題点
  - モジュール/パッケージ管理（モジュール定義ができない、パッケージの構成管理ができない）
  - 関数/変数のグローバル感染による問題
  - わかりにくいプロトタイプ型オブジェクト指向表現
@@ -86,7 +86,7 @@ Web教材: http://mj.is-good.net
    - 他
 
 <div align="center" >
-  <img src="/assets/PITCHME-18f89.png" width="40%" />
+<img src="/assets/PITCHME-18f89.png" width="40%" />
 </div>
 
 ---
