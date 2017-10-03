@@ -186,13 +186,15 @@ $ node hello_world.js
 ---
 ## Babelのインストール
 #### https://babeljs.io/
-- Babelは、異なるバージョンのJavaScriptのコードを変換できる **トランスコンパイラ**
+- Babelは、異なるバージョンのJavaScriptのコードを変換できる **トランスパイラ（トランスコンパイラ）**
 - トランスパイラ **Babel** は、**npm install** コマンドを用いてインストール
 ```
 npm install --save-dev babel-cli
 ```
-- ``---save-dev``オプションを加えることで *pacakge.json* に必要な情報が追記（更新）される
-
+- ``---save-dev``オプションを加えることで *pacakge.json* に開発時に必要なパッケージとして追記（更新）される
+<div align="center">
+<img src="assets/PITCHME-78607.png" width="40%" />
+</div>
 ---
 ## BabelのES6, ES7の対応化
 - Babelは様々なJavaScriptのトランスコンパイラ
@@ -212,4 +214,35 @@ npm install --save-dev babel-cli
 - Babelにデフォルトのコンパイル言語として**ES6**を割り当てるため、*~/.babelrc* ファイルに下記を記述(ES6の場合)
 ```json
 { "presets": ["es2015"] }
+```
+---
+## ES6のトランスパイル方法
+- **babel** コマンドを用いてトランスパイル（変換）
+```Bash
+$ babel ES6のファイルパス > 変換後のファイルパス
+```
+- 例（*test.es6* をトランスパイルし、*test.js* に変換）
+```Bash
+$ babel test.es6 > test.js
+```
+<div align="center">
+<img src="assets/PITCHME-2caaa.png" width="50%" />
+</div>
+
+---
+## Cloud9におけるNode.jsのアップグレード
+- *Node.js* のバージョンの確認方法
+```
+$ node -v
+```
+- **バージョン8** へのアップグレード
+```
+$ nvm install 8
+```
+- バージョン8では、ES modulesなどを除き、ほとんどのES6, 7の機能を充足。トランスパイルする必要はない
+
+- バージョンの切り替え方法
+ - **バージョン4** の利用に切り替える
+```
+$ nvm use 4
 ```
