@@ -184,7 +184,7 @@ alert('Hello, World');
 1. ウェブコンソールをクリック
 
 <div align="center">
- <img src="/assets/PITCHME-78447.png" width="50%" />
+<img src="/assets/PITCHME-78447.png" width="50%" />
 </div>
 
 ---
@@ -192,8 +192,7 @@ alert('Hello, World');
 #### console.log関数
 - ブラウザコンソールへ文字列を出力する
 - 文字列ではなくオブジェクトを引数に与えると、ツリーでオブジェクトの中身が出力される
-
-##### 記述例
+- 記述例
 
 ```html
 <script type="text/javascript">
