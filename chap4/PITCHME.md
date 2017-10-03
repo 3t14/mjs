@@ -186,3 +186,7 @@ alert('Hello, World');
 <div align="center">
 <img src="/assets/PITCHME-78447.png" width="50%" />
 </div>
+
+<div align="center">
+<img src="/assets/PITCHME-2caaa.png" width="50%" />
+</div>
