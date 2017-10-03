@@ -100,3 +100,19 @@ console.log(b); // 変数bは見えない
  - 定義後にも、戻り値として返した関数内部から、外部参照不可能変数への参照が可能
 
 +++?image=/assets/PITCHME-9f09d.png&size=contain
+
++++
+### クロージャと即時関数を用いたクラス定義の例
+```JavaScript
+let MyClass = (function(){
+	// 即時関数内の変数は外部から参照できない。
+	const secretPropKey = Symbol();
+	class MyClass{
+		constructor() {
+			this.prop1 = "hoge";
+			this[secretPropKey] = "秘密のプロパティ";
+		}
+	}
+	return MyClass; // 定義したクラスを返す
+})();
+```
