@@ -80,7 +80,7 @@ inc(a);
  - npmコマンドによるJavaScriptライブラリのパッケージ管理
  - npmコマンドが使えれば、altJSやSassやLESSなどのCSSプリプロセッサ、さらにはトランスパイラ環境も導入が容易！
 
----
+---?image=assets/PITCHME-8087c.png
 ## 当研修で利用する統合開発環境: Cloud9
 
 - クラウド統合開発環境<br /> <em>“Development As A Service”
@@ -88,5 +88,3 @@ inc(a);
 - ソースコードを公開してもよいのであれば、無料で無制限のワークスペースの利用が可能
 - Sublime風のタブテキスト編集環境の利用が可能
 - 言語に応じたコード補完機能を提供
-
-![](assets/PITCHME-8087c.png)
