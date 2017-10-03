@@ -128,3 +128,22 @@ console.log(constValue);
 @[4](定数は再代入不可)
 @[6](定数だとしても、ブロック外からの参照不可)
 @[9](配列の要素は、定数ではない)
+
+---
+### 2進数・8進数リテラル
+- 2進数と8進数のリテラルが新たに追加
+- 2進数は「**0b** (ゼロビー)」、8進数は「**0o** (ゼロオー)」で始める。
+
+```JavaScript
+var binary      = 0b1100;   // 2進数 ES6
+var octal       = 0o14;     // 8進数 ES6
+var decimal     = 12;       // 10進数
+var hex         = 0xc;      // 16進数
+var octalOld    = 014;      // *非標準 8進数（従来）
+
+console.log(binary);        // 12
+console.log(octal);         // 12
+console.log(decimal);       // 12
+console.log(hex);           // 12
+console.log(octalOld);      // 12
+```
