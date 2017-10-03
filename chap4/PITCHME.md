@@ -201,3 +201,32 @@ alert('Hello, World');
 //-->
 </script>
 ```
+
+---
+### 変数
+- 数値や文字列を一時的に保管しておくための入れ物に名前を付けておき、その名前によって数値や文字列を参照できる。
+
+```JavaScript
+var word;
+var cat;
+var a, b; // カンマ区切りで複数の変数を同時に宣言
+var i = 123; // iを宣言し、初期値123を代入
+```
+
+
+---
+### データ型
+
+- プリミティブ値
+ - 不変(immutable)な値として定義されるデータ型
+ - 文字列型であるstringもプリミティブ値であることに注意
+- オブジェクト
+ - プロパティのセット
+ - プロパティは、追加削除可能
+
+参考: https://developer.mozilla.org/ja/docs/Web/JavaScript/Data_structures
+
+---
+### プリミティブ型
+![](assets/PITCHME-e7e1b.png)
+参考: https://developer.mozilla.org/ja/docs/Web/JavaScript/Data_structures
