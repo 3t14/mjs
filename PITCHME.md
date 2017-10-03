@@ -165,8 +165,30 @@ $ node hello_world.js
 ```
 - 上記コマンドを実行するとパッケージに関する情報として、パッケージ名、Version等について問い合わせあり
 - 未定の場合は全て改行コードを入力してもよい
- - のちの修正は結果として生成される **package.json** ファイルを編集すればよい
+ - 後の修正は結果として生成される **package.json** ファイルを編集すればよい
+
+## package.jsonとは
+- 現在のディレクトリ階層以下にどのようなプログラムが入っているかを示すファイル
+- 利用する **npm** パッケージがある場合は、この **package.json** にその情報を登録する
 
 +++
 ## package.jsonの例
 ![](assets/PITCHME-bfefc.png)
+
+---
+## Babelのインストール
+#### https://babeljs.io/
+- Babelは、異なるバージョンのJavaScriptのコードを変換できる **トランスコンパイラ**
+- トランスパイラ **Babel** は、**npm install** コマンドを用いてインストール
+```
+npm install --save-dev babel-cli
+```
+- ``---save-dev``オプションを加えることで *pacakge.json* に必要な情報が追記（更新）される
+
+---
+## BabelのES6, ES7の対応化
+- Babelは様々なJavaScriptのトランスコンパイラ
+- 個々の対象言語はnpm intallコマンドを用いてbabel-cliとは別にインストールする必要あり
+- ES6, ES7用パッケージのインストール方法
+ - ES6の場合: `` $ npm install --save-dev babel-preset-es2015 ``
+ - ES7の場合: `` $ npm install --save-dev babel-preset-es2016 ``
