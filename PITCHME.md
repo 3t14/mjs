@@ -103,7 +103,7 @@ https://c9.io/pricing
 
 ---
 ## cloud9の利用登録（通常）
-1. https://c9.ioにアクセス
+1. https://c9.io にアクセス
 1. メールアドレスを入力し、[Sign Up]をクリック
 1. 名前、ユーザ名などの情報を入力して[Create Account]ボタンをクリック
 
