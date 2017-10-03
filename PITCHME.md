@@ -95,3 +95,22 @@ document.write('こんにちは！');
 ```HTML
 Hello, World!<br />こんにちは！
 ```
+
+---
+### HTMLへの文字列の動的出力
+
+#### 例2: **docuement.writeln** で文字列を出力する
+
+```JavaScript
+document.writeln('Hello, World!<br/>');
+document.writeln('こんにちは！');
+```
+
+
+#### HTMLソース
+
+```HTML
+Hello, World!<br />
+こんにちは！
+```
+@[1](改行コードが加わる)
