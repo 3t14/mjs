@@ -184,7 +184,7 @@ $ node hello_world.js
 
 ---
 ## Babelのインストール
-#### https://babeljs.io/
+- URL: https://babeljs.io/
 - Babelは、異なるバージョンのJavaScriptのコードを変換できる **トランスパイラ（トランスコンパイラ）**
 - トランスパイラ **Babel** は、**npm install** コマンドを用いてインストール
 ```
