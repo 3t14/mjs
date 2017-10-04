@@ -155,6 +155,12 @@ https://facebook.github.io/react/docs/hello-world.html
 </html>
 ```
 
+@[6](Reactライブラリの組み込み)
+@[7](ReactDOMライブラリの組み込み)
+@[8](Babelライブラリの組み込み)
+@[12-17](JSX文法による記述)
+@[12](type="text/babel"に注目)
+
 ---
 ### Hello, World
 #### create-react-app利用版
