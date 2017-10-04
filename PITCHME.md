@@ -307,6 +307,7 @@ console.log(p.a, p.b, p.c); // undefinedではなく'not exist'を出力
 ---
 ### Proxyオブジェクト  (2 / 3)
 - その他の主なトラップの例
+
 ```JavaScript
 let target = {a:1, b:2};
 let handler = {
@@ -328,9 +329,10 @@ console.log( 'a' in p); // 含まれてるがfalseを返す
 - 2015版ではトラップ“enumerate” が定義されていたが、2016版では削除されており、ChromeやFirefoxの最新版でも既に削除されているので注意
 
 ---
-### Mapオブジェクト①
-キーと値でデータを管理するオブジェクト
-コレクションとして使う
+### Mapオブジェクト (1 / 2)
+- キーと値でデータを管理するオブジェクト。コレクションとして使う
+```JavaScript
+
 
 ---
 ### Mapオブジェクト②
