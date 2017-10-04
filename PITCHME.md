@@ -17,12 +17,12 @@ Web教材: http://mj.is-good.net
 
 ---
 ### React.jsとは
-- UIを構築するためのFacebook製JavaScriptライブラリ
+- __UIを構築するため__ のFacebook製JavaScriptライブラリ
  - ターゲット：MVCのうちの **V(View)**
 - 近年急速にポピュラーに
  - 対抗馬：Google AngluarJS, vue.js等
 - **仮想的なDOM** の構造をJavaScriptに持ち、画面表示を更新する際は、差分のみを実際のDOMに対して適用することで、高速に処理することが可能
-- コンポーネントベースの開発のため、JavaScriptでも再利用性が高いコードを記述することが可能
+- コンポーネントベースの開発のため、JSでも再利用性が高いコードを記述することが可能
 
 ---
 ### Learn Once, Write Anywhere
