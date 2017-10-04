@@ -1,0 +1,7 @@
+---?include=chap1/PITCHME.md
+---?include=chap2/PITCHME.md
+---?include=chap3/PITCHME.md
+---?include=chap4/PITCHME.md
+---?include=chap5/PITCHME.md
+---?include=chap6/PITCHME.md
+---?include=chap7/PITCHME.md
