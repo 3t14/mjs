@@ -206,7 +206,7 @@ https://facebook.github.io/react/docs/hello-world.html
  ビルド前の各種コード
 
 <div align="center">
-<img src="/assets/PITCHME-f5d57.png" width="8%"/>
+<img src="/assets/PITCHME-f5d57.png" width="9%"/>
 </div>
 
 ---
@@ -227,7 +227,7 @@ https://facebook.github.io/react/docs/hello-world.html
 ---
 # ブラウザ上での表示
 
-
+![](/assets/PITCHME-942a4.png)
 
 ---
 ### create-react-appのビルド
