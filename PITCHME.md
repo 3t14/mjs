@@ -597,18 +597,28 @@ console.log(b);
 ```JavaScript
 import {name, …} from module
 ```
- - name：インポートする変数や関数
- - module：インポートするjsファイル
+ - **name**：インポートする変数や関数
+ - **module**：インポートするjsファイル
 ```JavaScript
 import * as alias from module
 ```
- - alias：moduleの別名
- - module：インポートするjsファイル
-
+ - **alias**：moduleの別名
+ - **module**：インポートするjsファイル
 
 ---
 ### モジュール機能 (3 / 3)
- default キーワードにより、名前のいらないエクスポートを宣言できる
+- default キーワードにより、名前のいらないエクスポートを宣言できる
+
+```JavaScript
+// module.js
+export default function test1() { return 'test1'};
+export function test2() { return 'test2'};
+
+// test.js
+import a from './test.js'; // デフォルトのみ取得
+console.log(a());
+
+```
 
 ---
 ### ブラウザでの実行準備
