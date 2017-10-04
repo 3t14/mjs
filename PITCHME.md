@@ -403,6 +403,7 @@ let c = new Car('フェラーリー', 'LaFerrari', 13500000); // 生成
 ---
 ### クラス定義 (4 / 6)
 - static 修飾子
+
 ```JavaScript
 class Car {
   static test(){ return 'static test';}
