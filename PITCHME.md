@@ -187,7 +187,7 @@ new Promise((resolve,reject)=>{時間のかかる処理を記述…})
 
 - **resolve**：処理成功時に呼び出す関数
 - **reject**：処理失敗時に呼び出す関数
-
+----
 #### thenメソッドの構文
 
 ```JavaScript
