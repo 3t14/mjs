@@ -547,7 +547,7 @@ class Test {
   }
 }
 let test = new Test();
-for (let v of c) { console.log(v); }
+for (let v of c) console.log(v);
 ```
 
 ---
@@ -555,6 +555,19 @@ for (let v of c) { console.log(v); }
 - 列挙可能なオブジェクトの実装がより簡単になる
  - **function❇︎ ** キーワードで定義
  - **yield** 命令で値を返す
+
+```JavaScript
+class Test {
+  constructor () {
+    this[Symbol.iterator] = function *() {
+      let i = 0;
+      while(i < 3) yield i++;
+    };
+  }
+}
+let test = new Test();
+for (let v of c) console.log(v);
+``
 ---
 ### モジュール機能①
 関数やクラスをimport, exportキーワードを利用してモジュール登録と参照が可能
