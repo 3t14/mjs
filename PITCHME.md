@@ -404,7 +404,29 @@ let c = new Car('フェラーリー', 'LaFerrari', 13500000); // 生成
 ### クラス定義 (4 / 6)
 - static 修飾子
 ```JavaScript
+class Car {
+  static test(){ return 'static test';}
+}
+console.log(Car.test()); // staticは静的メソッド。インスタンスの生成なしに利用できる
 ```
+
+++++
+- アクセッサ: **get**, **set** 記述を追加することでプロパティの代入・参照時に処理を組み込ませることができる
+
+```JavaScript
+class Car {
+  constructor(a) {
+    this.a = a;
+  }
+  get b() {return this._b; }
+  get b(v) { this._b = v; }
+  show() { return `${this.a}:${this.b}`;}
+}
+var c = new Car('my car');
+c.b = 'your car';
+console.log(c.show()); // my car:your car
+```
+
 
 ---
 ### クラス定義 (5 / 6)
