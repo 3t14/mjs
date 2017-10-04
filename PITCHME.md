@@ -225,7 +225,7 @@ https://facebook.github.io/react/docs/hello-world.html
 ```
 
 ---
-# ブラウザ上での表示
+### ブラウザ上での表示
 
 ![](/assets/PITCHME-942a4.png)
 
