@@ -73,7 +73,9 @@ Web教材: http://mj.is-good.net
 
 ---
 ### 仮想DOM
-![](assets/PITCHME-5cc94.png)
+<div align="center">
+<img src="assets/PITCHME-5cc94.png" height="90%" />
+</div>
 
 ---
 ### 特徴3: 再利用可能なコンポーネント
