@@ -172,9 +172,9 @@ test2()
 
 +++
 
-入れ子になっていない
-非同期処理を行う関数（test2）の戻り値をPromiseオブジェクトにする
-非同期処理完了後、thenメソッドが呼ばれる
+- 入れ子になっていない
+- 非同期処理を行う関数（test2）の戻り値をPromiseオブジェクトにする
+- 非同期処理完了後、thenメソッドが呼ばれる
 
 
 ---
@@ -287,7 +287,7 @@ Promise.race([test4('value1'), test4('value2'), test4('value3')])
 
 ![](https://mdn.mozillademos.org/files/8633/promises.png)
 
-出典：Promise - JavaScript | MDN
+出典：[Promise - JavaScript | MDN](https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Global_Objects/Promise)
 
 ---
 ### Proxyオブジェクト (1 / 3)
@@ -384,6 +384,19 @@ for (let v of s) { // ofで個々の要素取得可能
 ### Setオブジェクト (2 / 2)
 - コンストラクターに配列を渡すと、要素が展開されて、別々の値として格納される
 - 同じ値は無視される
+
+```JavaScript
+let obj = {};
+let func = () => {};
+
+// 重複を除去
+let s = new Set([1, 1, 'value', obj, func, {}]);
+// 1, value, Object {}, () => {}, Object {}
+for (let v of s) { // ofで個々の要素取得可能
+  console.log(v);
+}
+```
+
 ---
 ### クラス定義 (1 / 6)
 - JavaやC#などの言語と同じようにクラスを定義
@@ -415,7 +428,6 @@ class Car {
   constructor(){}; // 二重定義はNG
   this.a = 1; // NG: プロパティ代入はメソッドやコンストラクタの中で
   let b = 2 ; // NG;
-
   test(){
     this.a = 1; // OK
     let b= 2;  //OK
@@ -465,6 +477,7 @@ class Car {
 console.log(Car.test()); // staticは静的メソッド。インスタンスの生成なしに利用できる
 ```
 
+---
 ### クラス定義 (5 / 6)
 - アクセッサ: **get**, **set** 記述を追加することでプロパティの代入・参照時に処理を組み込ませることができる
 
@@ -506,7 +519,6 @@ class RacingCar extends Car { // Carを継承（拡張）
 let c = newRacingCar('トヨタ', 'TS050 HYBRID', 'LMP1');
 console.log(c.show());
 ```
-
 
 ---
 ### イテレーター①
