@@ -363,22 +363,20 @@ for (let  [k, v] of m) { // keyとvalueを分割代入で取得できる。
 - **func** と **()=>{}** は別の値
 
 ```JavaScript
-let obj = {};
 let func = () => {};
-let m = new Set();
+let s = new Set();
 s.add(1);
 s.add(1); // 無視される
 s.add("value");
-s.add(obj);
 s.add(func);
 s.add(()=>{})
 console.log(s.has(1)); // true
 console.log(s.has(3)); // false
-console.log(s.has(obj)); // true
+console.log(s.has(func)); // true
 console.log(s.has({})); // false // リテラル表記のため
 
-for (let  [k, v] of m) { // keyとvalueを分割代入で取得できる。
-  console.log(k, v);
+for (let v of s) { // ofで個々の要素取得可能
+  console.log(v);
 }
 ```
 
