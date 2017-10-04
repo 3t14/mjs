@@ -572,6 +572,7 @@ for (let v of c) console.log(v);
 
 ### モジュール機能 (1 / 3)
 - 関数やクラスをimport, exportキーワードを利用してモジュール登録と参照が可能
+
 ```JavaScript
 // module.js
 export var a = 1;
