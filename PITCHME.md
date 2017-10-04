@@ -206,7 +206,7 @@ https://facebook.github.io/react/docs/hello-world.html
  ビルド前の各種コード
 
 <div align="center">
-<img src="/assets/PITCHME-f5d57.png" width="20%"/>
+<img src="/assets/PITCHME-f5d57.png" width="12%"/>
 </div>
 
 ---
