@@ -521,14 +521,32 @@ console.log(c.show());
 ```
 
 ---
-### イテレーター①
- for…of 命令で列挙可能なオブジェクトを作成するためのオブジェクト
- Array、String、Map、Set などの組み込みオブジェクトは、デフォルトでこのイテレータが組み込まれている
+### イテレーター (1 / 2)
+- **for…of** 命令で列挙可能なオブジェクトを作成するためのオブジェクト
+-  **Array、String、Map、Set** などの組み込みオブジェクトは、デフォルトでこのイテレータが組み込まれている
 
 ---
-### イテレーター②
- next 関数を戻り値に持つ関数を、プロパティ Symbol.iterator に設定
- next 関数は、続きがあるかどうか(done)と、続きがあるならば、現在の値(value)を一緒に返す
+### イテレーター (2 / 2)
+- next 関数を戻り値に持つ関数を、プロパティ **Symbol.iterator** に設定
+- next 関数は、続きがあるかどうか(done)と、続きがあるならば、現在の値(value)を一緒に返す
+
+```JavaScript
+class Test {
+  constructor () {
+    this[Symbol.iterator] = () => {
+      let i = 0;
+      return {
+        next() {
+          // 0-2まで繰り返す、3になったらdone:trueを返す
+          return i < 3 ? {value: i++, done:false} : {done: true};
+        }
+      };
+    };
+  }
+}
+let test = new Test();
+for (let v of c) { console.log(v); }
+```
 
 ---
 ### ジェネレーター①
