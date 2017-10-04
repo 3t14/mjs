@@ -124,9 +124,9 @@ https://facebook.github.io/react/docs/hello-world.html
 ### Hello, World!
 #### HTMLファイル単体版
 - HTMLファイルをダウンロード
- - https://github.com/facebook/react/blob/master/docs/downloads/single-file-example.html
+ - https://goo.gl/gPbWBb
 - scriptタグの内部上にJSXのコードを記述していけばよいだけ
-- ただし、このタイプのReact.jsの利用方法は、本番用ではなく、あくまでもお試し用
+- ただし、このタイプの **React.js** の利用方法は、本番用ではなく、あくまでもお試し用
 
 ---
 ### ソースコードの中身
@@ -159,15 +159,18 @@ https://facebook.github.io/react/docs/hello-world.html
 @[12-17](JSX文法による記述)
 @[12](type="text/babel"に注目)
 
----
-### Hello, World
-#### create-react-app利用版
-src/index.jsを下記のように修正し保存
-public/index.html内に<div id=“root”></div>が定義されている前提
 
 ---
 ### ReactDOM.renderメソッドの役割
 
+- 第1引数: 書き込むHTMLのタグ(JSX表記)、
+- 第2引数: 第1引数の内容を代入する対象のDOMオブジェクト
+  - *document.getElementById(‘root’)* <br />
+　→ *id=“root”* となる **DOMオブジェクト** を取得
+
+<div align="center">
+<img src="assets/PITCHME-bc8e2.png" width="80%"/>
+</div>
 ---
 ### create-react-appのビルド
  npm startのみでは開発環境のみでの動作
@@ -178,6 +181,12 @@ $ npm run build
 ---
 ### ビルド結果
 buildフォルダが生成される
+
+---
+### Hello, World
+#### create-react-app利用版
+- src/index.jsを下記のように修正し保存
+- public/index.html内に<div id=“root”></div>が定義されている前提
 
 ---
 ## JSXの導入
