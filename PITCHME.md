@@ -433,7 +433,7 @@ console.log(c.show()); // my car:your car
 ### クラス定義 (5 / 6)
 - **extends** キーワードによるクラスの継承。差分プログラミングができる。
 
-```ES6
+```javascript
 class Car {
   constructor(maker, name) {
     this.maker = maker;
