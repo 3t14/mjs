@@ -84,6 +84,23 @@ Web教材: http://mj.is-good.net
 再利用可能なコンポーネント
 一度定義したら、他で流用可能なため再利用性が高い
 
+```JSX
+class ShoppingList extends React.Component {
+  render() {
+    return (
+      <div className="shopping-list">
+        <h1>Shopping List for {this.props.name}</h1>
+        <ul>
+          <li>Instagram</li>
+          <li>WhatsApp</li>
+          <li>Oculus</li>
+        </ul>
+      </div>
+    );
+  }
+}
+```
+
 ---
 ### SPAとは
 SPA = Single Page Application
