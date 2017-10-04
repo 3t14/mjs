@@ -13,10 +13,10 @@ Web教材: http://mj.is-good.net
 
 ```JavaScript
 // 従来のリテラル
-var f1 = function(a, b) { return a * b };
+let f1 = function(a, b) { return a * b };
 
 // 上記をアロー関数に置き換えたもの
-var f2 = (a, b) => { return a * b };
+let f2 = (a, b) => { return a * b };
 console.log(f1(2,3)); // 6
 console.log(f2(2,3)); // 6
 ```
@@ -37,19 +37,19 @@ console.log(f2(2,3)); // 6
 let MyObject = function MyObject() {
   this.i = 1;
   console.log(this); // オブジェクト自身の参照
-  var f1 = function() {
+  let f1 = function() {
     console.log(this); // コンソール上での確認用
     console.log(this.i); // undefined
   };
   f1();
-  var f2 = () => {
+  let f2 = () => {
       console.log(this); // コンソール上での確認用
       console.log(this.i); // 上記で定義したiの値1が出力される
   };
   f2();
 }
 
-var myObject = new MyObject(); // オブジェクトを生成し動作を確認
+let myObject = new MyObject(); // オブジェクトを生成し動作を確認
 ```
 
 @[4-7](この関数内ではthis=グローバルオブジェクト);
@@ -69,15 +69,15 @@ var myObject = new MyObject(); // オブジェクトを生成し動作を確認
 #### 省略記法 1
 ```JavaScript
 // return文のみの場合は{}は不要
-var f1 = (a, b) => a * b;
+let f1 = (a, b) => a * b;
 console.log(f1(2, 3)); // 6
 
 // 引数が一つのみの場合は()は不要
-var f2 = a => a * 3;
+let f2 = a => a * 3;
 console.log(f2(2)); // 6
 
 // 引数がない場合は()の省略は不可
-var f3 = () => 2 * 3;
+let f3 = () => 2 * 3;
 console.log(f3()); // 6
 ```
 ---
@@ -85,11 +85,11 @@ console.log(f3()); // 6
 #### オブジェクトリテラルとデフォルト引数
 ```JavaScript
 // オブジェクトリテラルを返す場合は()で囲む
-var f4 = () => ({key: 'value'});
+let f4 = () => ({key: 'value'});
 console.log( f4() );
 
 // デフォルト引数も利用可能
-var f5 = (a = 2, b = 3) => a * b;
+let f5 = (a = 2, b = 3) => a * b;
 console.log(f5());
 ```
 
@@ -99,7 +99,7 @@ console.log(f5());
 
 ```JavaScript
 // 可変長引数の利用
-var f6 = (a, b, ...others) => {
+let f6 = (a, b, ...others) => {
   let c = a + b;
   for (let i of others) {
     c += i;
@@ -109,7 +109,7 @@ var f6 = (a, b, ...others) => {
 console.log(f6(1, 2, 3, 4)); // 10
 
 // 分割代入や展開演算子の利用
-var f7 = (a, b, [c, d] = [3, 4]) => a + b + c + d;
+let f7 = (a, b, [c, d] = [3, 4]) => a + b + c + d;
 console.log(f7(...[1, 2])); // 10
 ```
 
@@ -126,7 +126,7 @@ console.log(f7(...[1, 2])); // 10
 ### コールバック地獄の例
 
 ```JavaScript
-var i = 0;
+let i = 0;
 function test(callback) {
   i++;
   console.log(i);
@@ -144,8 +144,31 @@ test(() => {
 ```
 
 ---
-### Promiseオブジェクト②
- Promiseオブジェクトを使用した例
+### Promiseオブジェクト (2 / 8)
+#### Promiseオブジェクトを使用した例
+
+```JavaScript
+let j = 0;
+function test2() {
+  j++;
+  console.log(j);
+  return new Promise((resolve, reject) => {
+    if (j > 2) {
+      reject('error');
+    } else {
+      resolve();
+    }
+  });
+}
+
+test2()
+  .then(() => test2())
+  .then(() => test2())
+  .catch(e => console.log(e));
+```
+
++++
+
 入れ子になっていない
 非同期処理を行う関数（test2）の戻り値をPromiseオブジェクトにする
 非同期処理完了後、thenメソッドが呼ばれる
@@ -153,7 +176,7 @@ test(() => {
 
 ---
 ### Promiseオブジェクト③
-Promiseコンストラクタの構文
+- Promiseコンストラクタの構文
 new Promise((resolve,reject)=>{時間のかかる処理を記述…})
  resolve：処理成功時に呼び出す関数
  reject：処理失敗時に呼び出す関数
