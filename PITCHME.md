@@ -31,7 +31,7 @@ console.log(f2(2,3)); // 6
  - アロー関数内
    - 対象クラスのインスタンス（オブジェクト）自身
 
-++++
++++
 
 ```JavaScript
 let MyObject = function MyObject() {
