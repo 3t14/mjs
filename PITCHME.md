@@ -241,7 +241,9 @@ $ npm run build
 
 ---
 ### ビルド結果
-buildフォルダが生成される
+- buildフォルダが生成される
+
+![](assets/PITCHME-21443.png)
 
 ---
 ### Hello, World
