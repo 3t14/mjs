@@ -198,24 +198,71 @@ then(onFullFilled,onRejected)
 - **onRejected**：処理失敗時のコールバック関数
 
 
+---
+### Promiseオブジェクト (4 / 8)
+- 処理失敗時のコールバック関数は、一つにまとめることが可能
+
+```JavaScript
+// 全てに処理失敗時の関数を記述した場合、以下の順で出力
+// 1, 2, 3, error3, 4, error5, 5
+test2()
+  .then(()=>test2(), () => console.log('error1'))
+  .then(()=>test2(), () => console.log('error2'))
+  .then(()=>test2(), () => console.log('error3'))
+  .then(()=>test2(), () => console.log('error4'))
+  .then(()=>test2(), () => console.log('error5'))
+  .then(()=>test2(), () => console.log('error6'));
+
+```
+---
+### Promiseオブジェクト (5 / 8)
+
+```JavaScript
+// 最後に処理失敗時の関数を記述した場合、以下の順で出力
+// 1, 2, 3, error
+test2()
+  .then(()=>test2())
+  .then(()=>test2())
+  .then(()=>test2())
+  .then(()=>test2())
+  .then(()=>test2(), () => console.log('error'));
+```
 
 ---
-### Promiseオブジェクト④
-処理失敗時のコールバック関数は、一つにまとめることが可能
+### Promiseオブジェクト (6 / 8)
+- catch関数の利用
+ - ``catch(reject)``
+ - **reject**：処理失敗時のコールバック関数
+
+ ```JavaScript
+ // 最後に処理失敗時の関数を記述した場合、以下の順で出力
+ // 1, 2, 3, error
+ test2()
+   .then(()=>test2())
+   .then(()=>test2())
+   .then(()=>test2())
+   .catch(() => console.log('error'));
+ ```
 
 ---
-### Promiseオブジェクト⑤
+### Promiseオブジェクト (7 / 8)
+- Promise.all関数を利用すると、複数の処理を並行に実行し、全て成功した場合に処理を行う、といったことも可能
+ - その場合、受け取る値は配列となる
 
----
-### Promiseオブジェクト⑥
-catch関数の利用
-catch(reject)
-reject：処理失敗時のコールバック関数
-
----
-### Promiseオブジェクト⑦
- Promise.all関数を利用すると、複数の処理を並行に実行し、全て成功した場合に処理を行う、といったことも可能
-その場合、受け取る値は配列となる
+ ```JavaScript
+function test3(value) {
+  return new Promise((resolve, reject) => {
+    if (typeof value === "undefined") reject('undefined');
+    else resolve(value);
+  });
+}
+// ["value1", "value2"]を出力
+Promise.all([test3('value1'), test3('value2')])
+  .then(a => console.log(a), b => console.log(b));
+// undefinedを出力
+Promise.all([test3('value1'), test3()])
+  .then(a => console.log(a), b => console.log(b));
+```
 
 ---
 ### Promiseオブジェクト⑧
