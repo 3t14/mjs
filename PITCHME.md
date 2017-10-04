@@ -33,16 +33,12 @@ Web教材: http://mj.is-good.net
 
 ---
 ### GitHubに見るReact.jsの人気度
-
 - Angular.js
 ![](assets/PITCHME-49527.png)
-
 - vue.js
 ![](assets/PITCHME-73e01.png)
-
 - React.js
 ![](assets/PITCHME-13a0b.png)
-
 
 ---
 ### 特徴1: 宣言的
