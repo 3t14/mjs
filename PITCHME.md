@@ -52,6 +52,9 @@ let MyObject = function MyObject() {
 var myObject = new MyObject(); // オブジェクトを生成し動作を確認
 ```
 
+@[4-7](この関数内ではthis=グローバルオブジェクト);
+@[9-12](この関数内ではthis=インスタンス自身);
+@[2, 11](オブジェクトのプロパティiの参照が可能);
 
 ---
 ### 関数とnew 演算子
