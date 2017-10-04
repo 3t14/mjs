@@ -422,7 +422,7 @@ class Car {
   get b(v) { this._b = v; }
   show() { return `${this.a}:${this.b}`;}
 }
-var c = new Car('my car');
+let c = new Car('my car');
 c.b = 'your car';
 console.log(c.show()); // my car:your car
 ```
@@ -430,8 +430,25 @@ console.log(c.show()); // my car:your car
 
 ---
 ### クラス定義 (5 / 6)
-- extends キーワードによるクラスの継承
+- **extends** キーワードによるクラスの継承。差分プログラミングができる。
 ```JavaScript
+class Car {
+  constructor(maker, name) {
+    this.maker = maker;
+    this.name = name;
+  }
+  show() { return `${this.maker}.${this.name}`; }
+}
+
+class RacingCar extends Car { // Carを継承（拡張）
+  constructor(maker, name, category) {
+    super(maker, name);
+    this.category = category;
+  }
+  show() { return `${super.show()}:${this.category}`; }
+}
+let c = newRacingCar('トヨタ', 'TS050 HYBRID', 'LMP1');
+console.log(c.show());
 ```
 
 ---
