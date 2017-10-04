@@ -330,9 +330,21 @@ console.log( 'a' in p); // 含まれてるがfalseを返す
 
 ---
 ### Mapオブジェクト (1 / 2)
-- キーと値でデータを管理するオブジェクト。コレクションとして使う
-```JavaScript
+- キーと値でデータを管理するコレクションオブジェクト。キーに対してオブジェクトを割り当てることができる。
 
+```JavaScript
+let obj = {};
+let func = () => {};
+let m = new Map();
+m.set('key1', 'value1'); console.log(m.get('key1'));
+m.set(obj, 'value2'); console.log(m.get(obj));
+m.set(func, 'value3'); console.log(m.get(func));
+m.set(0.1, 'value4'); console.log(m.get(0.1));
+console.log(m.size); // 要素数の取得
+for (let  [k, v] of m) { // keyとvalueを分割代入で取得できる。
+  console.log(k, v);
+}
+```
 
 ---
 ### Mapオブジェクト②
