@@ -567,24 +567,29 @@ class Test {
 }
 let test = new Test();
 for (let v of c) console.log(v);
-``
+```
 ---
-### モジュール機能①
-関数やクラスをimport, exportキーワードを利用してモジュール登録と参照が可能
+
+### モジュール機能 (1 / 3)
+- 関数やクラスをimport, exportキーワードを利用してモジュール登録と参照が可能
 
 ---
-### モジュール機能②
-import構文
+### モジュール機能 (2 / 3)
+- import構文
+```JavaScript
 import {name, …} from module
-name：インポートする変数や関数
-module：インポートするjsファイル
+```
+ - name：インポートする変数や関数
+ - module：インポートするjsファイル
+```JavaScript
 import * as alias from module
-alias：moduleの別名
-module：インポートするjsファイル
+```
+ - alias：moduleの別名
+ - module：インポートするjsファイル
 
 
 ---
-### モジュール機能③
+### モジュール機能 (3 / 3)
  default キーワードにより、名前のいらないエクスポートを宣言できる
 
 ---
