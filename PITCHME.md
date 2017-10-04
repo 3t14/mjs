@@ -90,12 +90,28 @@ console.log( f4() );
 
 // デフォルト引数も利用可能
 var f5 = (a = 2, b = 3) => a * b;
-console.log( f5() );
+console.log(f5());
 ```
 
 ---
-### アロー関数⑤
-可変長引数、分割代入、展開演算子
+### アロー関数 (5 / 5)
+#### 可変長引数、分割代入、展開演算子
+
+```JavaScript
+// 可変長引数の利用
+var f6 = (a, b, ...others) => {
+  let c = a + b;
+  for (let i of others) {
+    c += i;
+  }
+  return c;
+}
+console.log(f6(1, 2, 3, 4)); // 10
+
+// 分割代入や展開演算子の利用
+var f7 = (a, b, [c, d] = [3, 4]) => a + b + c + d;
+console.log(f7(...[1, 2])); // 10
+```
 
 ---
 ### Promiseオブジェクト①
