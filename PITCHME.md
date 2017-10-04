@@ -257,19 +257,35 @@ function test3(value) {
   });
 }
 // ["value1", "value2"]を出力
-Promise.all([test3('value1'), test3('value2')])
+Promise.all([test3('value1'), test3('value2')]) // すべてresolve
   .then(a => console.log(a), b => console.log(b));
 // undefinedを出力
-Promise.all([test3('value1'), test3()])
+Promise.all([test3('value1'), test3()]) // １つrejectがあるので失敗
   .then(a => console.log(a), b => console.log(b));
 ```
 
 ---
-### Promiseオブジェクト⑧
- Promise.race関数では、一番最初に完了した処理の結果を元に、then関数が実行される
+### Promiseオブジェクト (8 / 8)
+- Promise.race関数では、一番最初に完了した処理の結果を元に、then関数が実行される
+
+```JavaScript
+function test4(value) {
+ return new Promise((resolve, reject) => {
+   setTimeout( () => { // 指定したミリ秒後に処理を実行
+     if (typeof value === "undefined") reject('undefined');
+     else resolve(value);
+   }, Math.random() * 100 ); // 乱数で実行のタイミングをずらす
+ });
+}
+// "value1", "value2", "value3"のいずれかが出力される
+Promise.race([test4('value1'), test4('value2'), test4('value3')])
+ .then(a => console.log(a), b => console.log(b));
+```
 
 ---
 ### Promiseオブジェクトの処理の流れ
+
+![](https://mdn.mozillademos.org/files/8633/promises.png)
 
 ---
 ### Proxyオブジェクト①
