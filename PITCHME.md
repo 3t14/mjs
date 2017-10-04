@@ -34,11 +34,11 @@ Web教材: http://mj.is-good.net
 ---
 ### GitHubに見るReact.jsの人気度
 - Angular.js
-![](assets/PITCHME-49527.png)
+![](/assets/PITCHME-49527.png)
 - vue.js
-![](assets/PITCHME-73e01.png)
+![](/assets/PITCHME-73e01.png)
 - React.js
-![](assets/PITCHME-13a0b.png)
+![](/assets/PITCHME-13a0b.png)
 
 ---
 ### 特徴1: 宣言的
@@ -163,20 +163,78 @@ https://facebook.github.io/react/docs/hello-world.html
 ---
 ### ReactDOM.renderメソッドの役割
 
-- 第1引数: 書き込むHTMLのタグ(JSX表記)、
-- 第2引数: 第1引数の内容を代入する対象のDOMオブジェクト
+- *第1引数*: 書き込むHTMLのタグ(JSX表記)
+- *第2引数*: 第1引数の内容を代入する対象のDOMオブジェクト
   - *document.getElementById(‘root’)* <br />
 　→ *id=“root”* となる **DOMオブジェクト** を取得
 
 <div align="center">
-<img src="assets/PITCHME-bc8e2.png" width="80%"/>
+<img src="/assets/PITCHME-d62c8.png" width="80%"/>
 </div>
+
+
+---
+### 実際のビルド環境の構築
+- React.jsを扱うには、様々なパッケージのインストールが必要
+ - 導入の妨げとなっていた
+- create-react-appパッケージの登場
+ - React.jsのビルド環境を簡単に作るためのnpmパッケージ
+ - 簡単にビルド環境を構築できるように
+
+---
+### React用プロジェクトを作成
+- Reactプロジェクト生成用npmパッケージのインストール
+
+```bash
+　$ npm install -g create-react-app
+```
+- **my-app** という名のプロジェクトを生成する場合
+
+```bash
+　$ create-react-app my-app
+```
+
+- このコマンド実行により **react, react-dom, react-scripts** などの関連パッケージが全てインストールされる
+
+---
+### プロジェクト内のファイル構成
+- node_modules: <br />
+ 関連パッケージフォルダ
+- public: <br />
+ staticな公開フォルダ
+- src: <br />
+ ビルド前の各種コード
+
+ <div align="center">
+ <img src="/assets/PITCHME-f5d57.png" width="20%"/>
+ </div>
+
+---
+### Webサーバーの起動とReactの動作確認
+- プロジェクトフォルダに移動
+
+```
+　$ cd my-app
+```
+
+- npmコマンドでWebサーバーを起動
+```
+　$ npm start
+```
+
+# ブラウザ上での表示
+
+
+
 ---
 ### create-react-appのビルド
- npm startのみでは開発環境のみでの動作
-開発したものをビルドしてHTML, CSS, JS各ファイルの静的なファイル群として提供できれば、任意のWebサーバー上で公開可能
-ビルドコマンド
+- ``npm start``のみでは開発環境のみでの動作
+- 開発したものをビルドしてHTML, CSS, JS各ファイルの静的なファイル群として提供できれば、任意のWebサーバー上で公開可能
+- ビルドコマンド
+
+```bash
 $ npm run build
+```
 
 ---
 ### ビルド結果
