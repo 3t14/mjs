@@ -76,7 +76,7 @@ Web教材: http://mj.is-good.net
   - 非効率
 
 ---
-###仮想DOM
+### 仮想DOM
 ![](assets/PITCHME-5cc94.png)
 
 ---
