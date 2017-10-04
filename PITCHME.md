@@ -7,38 +7,41 @@ Web教材: http://mj.is-good.net
 
 ---
 ### React.jsの背景
-JavaScriptコード記述の生産性問題
-コードの混在とグローバル変数の衝突
-再利用性
-保守性、可読性の問題
-Viewのレンダリング効率の問題
-DOM管理の複雑性と非効率性
+
+- JavaScriptコード記述の生産性問題
+ - コードの混在とグローバル変数の衝突
+ - 再利用性
+ - 保守性、可読性の問題
+- Viewのレンダリング効率の問題
+ - DOM管理の複雑性と非効率性
 
 ---
 ### React.jsとは
-UIを構築するためのFacebook製JavaScriptライブラリ
-ターゲット：MVCのうちのV(View)
-近年急速にポピュラーに
-対抗馬：Google AngluarJS, vue.js等
-仮想的なDOMの構造をJavaScriptに持ち、画面表示を更新する際は、差分のみを実際のDOMに対して適用することで、高速に処理することが可能
-コンポーネントベースの開発のため、JavaScriptでも再利用性が高いコードを記述することが可能
+- UIを構築するためのFacebook製JavaScriptライブラリ
+ - ターゲット：MVCのうちの **V(View)**
+- 近年急速にポピュラーに
+ - 対抗馬：Google AngluarJS, vue.js等
+- **仮想的なDOM** の構造をJavaScriptに持ち、画面表示を更新する際は、差分のみを実際のDOMに対して適用することで、高速に処理することが可能
+- コンポーネントベースの開発のため、JavaScriptでも再利用性が高いコードを記述することが可能
 
 ---
 ### Learn Once, Write Anywhere
-「一度学べば、どこでも書ける」
- Java Virtual Machineの”Write Once, Run Anywhere”に対する言葉
-Webアプリだけではなく、スマートフォンアプリ、タブレットアプリなどでもReactの仕組みで開発することができる。
- React Native
+- 「一度学べば、どこでも書ける」
+- **Java Virtual Machine** の”**Write Once, Run Anywhere**”に対する言葉
+- Webアプリだけではなく、スマートフォンアプリ、タブレットアプリなどでもReactの仕組みで開発することができる。
+ - **React Native**
 
 ---
 ### GitHubに見るReact.jsの人気度
-Angular.js
 
-vue.js
+- Angular.js
+![](assets/PITCHME-49527.png)
 
-React.js
+- vue.js
+![](assets/PITCHME-73e01.png)
 
-
+- React.js
+![](assets/PITCHME-13a0b.png)
 
 
 ---
