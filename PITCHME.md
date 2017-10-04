@@ -125,12 +125,35 @@ https://facebook.github.io/react/docs/hello-world.html
 ---
 ### Hello, World!
 #### HTMLファイル単体版
-HTMLファイルをダウンロード https://facebook.github.io/react/downloads/single-file-example.html
-scriptタグの内部上にJSXのコードを記述していけばよいだけ。
-ただし、このタイプのReact.jsの利用方法は、本番用ではなく、あくまでもお試し用
+- HTMLファイルをダウンロード
+ - https://github.com/facebook/react/blob/master/docs/downloads/single-file-example.html
+- scriptタグの内部上にJSXのコードを記述していけばよいだけ
+- ただし、このタイプのReact.jsの利用方法は、本番用ではなく、あくまでもお試し用
 
 ---
 ### ソースコードの中身
+
+```HTML
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Hello World</title>
+    <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="text/babel">
+      ReactDOM.render(
+        <h1>Hello, world!</h1>,
+        document.getElementById('root')
+      );
+    </script>
+  </body>
+</html>
+```
 
 ---
 ### Hello, World
