@@ -190,6 +190,7 @@ $ node hello_world.js
 ### Babelのインストール
 - 異なるバージョンのJavaScriptのコードを変換できる **トランスパイラ（トランスコンパイラ）**
 - トランスパイラ **Babel** は、**npm install** コマンドを用いてインストール
+- Babelはホームディレクトリ上でインストールする
 ```
 npm install --save-dev babel-cli
 ```
