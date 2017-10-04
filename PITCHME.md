@@ -369,7 +369,7 @@ class Car {
 }
 ```
 
----
++++
 ### hoistとは？
 - 巻き上げ: varやlet宣言されたものは、コードの先頭で宣言したものとして位置付けられるため、宣言前でも参照できること。
 - 変数やクラスの宣言位置と参照位置の関係
@@ -387,6 +387,17 @@ class Car {
 - クラスリテラル
 
 ```JavaScript
+var Car = class { // 無名クラスの定義と変数への代入
+  constructor(maker, name, price) {
+    this.maker = maker;
+    this.name = name;
+    this.price =price;
+  }
+  show() { // メソッドの定義functionは不要
+    return `${this.maker}.${this.name}.${this.price}`
+  }
+}
+let c = new Car('フェラーリー', 'LaFerrari', 13500000); // 生成
 ```
 
 ---
