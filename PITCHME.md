@@ -80,9 +80,8 @@ Web教材: http://mj.is-good.net
 ![](assets/PITCHME-5cc94.png)
 
 ---
-### 特徴3:
-再利用可能なコンポーネント
-一度定義したら、他で流用可能なため再利用性が高い
+### 特徴3: 再利用可能なコンポーネント
+- 一度定義したら、他で流用可能なため再利用性が高い
 
 ```JSX
 class ShoppingList extends React.Component {
