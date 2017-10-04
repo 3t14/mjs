@@ -633,7 +633,8 @@ $ npm install --save-dev babelify
 - 以下コマンドで、jsファイルを変換・結合し、ブラウザで実行可能な jsファイルを作成する
 
 ```
-browserify <jsファイル1> <jsファイル2> -t [babelify --presets es2015] –o<ブラウザ用jsファイル>
+browserify <jsファイル1> <jsファイル2> -t
+  [babelify --presets es2015] –o<ブラウザ用jsファイル>
 ```
 
 ---
