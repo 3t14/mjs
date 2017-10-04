@@ -205,12 +205,13 @@ https://facebook.github.io/react/docs/hello-world.html
 - src: <br />
  ビルド前の各種コード
 
- <div align="center">
- <img src="/assets/PITCHME-f5d57.png" width="20%"/>
- </div>
+<div align="center">
+<img src="/assets/PITCHME-f5d57.png" width="20%"/>
+</div>
 
 ---
 ### Webサーバーの起動とReactの動作確認
+
 - プロジェクトフォルダに移動
 
 ```
@@ -218,10 +219,12 @@ https://facebook.github.io/react/docs/hello-world.html
 ```
 
 - npmコマンドでWebサーバーを起動
+
 ```
 　$ npm start
 ```
 
+---
 # ブラウザ上での表示
 
 
