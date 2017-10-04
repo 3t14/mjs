@@ -153,11 +153,8 @@ function test2() {
   j++;
   console.log(j);
   return new Promise((resolve, reject) => {
-    if (j > 2) {
-      reject('error');
-    } else {
-      resolve();
-    }
+    if (j > 2) reject('error');
+    else resolve();
   });
 }
 
