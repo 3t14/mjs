@@ -261,7 +261,7 @@ import ReactDOM from 'react-dom';
 ReactDOM.render(<App />, document.getElementById('root'));
 // registerServiceWorker();
 ```
-@[3, 4, 5, 7](初期の学習には不要。コメントアウトする)
+@[3, 4, 5, 8](初期の学習には不要。コメントアウトする)
 
 ---
 ## JSXの導入
