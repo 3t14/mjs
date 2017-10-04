@@ -74,7 +74,7 @@ Web教材: http://mj.is-good.net
 ---
 ### 仮想DOM
 <div align="center">
-<img src="assets/PITCHME-5cc94.png" height="90%" />
+<img src="assets/PITCHME-5cc94.png" width="90%" />
 </div>
 
 ---
