@@ -22,39 +22,34 @@ console.log(f2(2,3)); // 6
 ```
 
 ---
-### アロー関数②
+### アロー関数 (2 / 5)
 #### thisキーワードの意味の違い
 - thisの意味
- - 通常の関数f1内
-	 - globalオブジェクト
+ - 通常の関数内: globalオブジェクト
+   - ブラウザの場合: **windowオブジェクト**
+   - Node.jsの場合: **globalオブジェクト**
+ - アロー関数内
+   - 対象クラスのインスタンス（オブジェクト）自身
+
+++++
 
 ```JavaScript
 let MyObject = function MyObject() {
   this.i = 1;
   console.log(this); // オブジェクト自身の参照
   var f1 = function() {
-    console.log(this);
+    console.log(this); // コンソール上での確認用
     console.log(this.i); // undefined
   };
   f1();
-```
-
-+++
-#### 続き
-
-- thisの意味
-- アロー関数f2内
-  - testオブジェクト
-
-```JavaScript
   var f2 = () => {
-      console.log(this);
-      console.log(this.i);
+      console.log(this); // コンソール上での確認用
+      console.log(this.i); // 上記で定義したiの値1が出力される
   };
   f2();
 }
 
-var myObject = new MyObject();
+var myObject = new MyObject(); // オブジェクトを生成し動作を確認
 ```
 
 
