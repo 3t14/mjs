@@ -1,335 +1,212 @@
 #### モダンJavaScriptプログラミング入門
-# 7. React.jsの基本
+# 6. ES6の基本文法2
 #### 田中　充
 ##### 株式会社イワテシガ
 
 Web教材: http://mj.is-good.net
 
 ---
-### React.jsの背景
-
-- JavaScriptコード記述の生産性問題
- - コードの混在とグローバル変数の衝突
- - 再利用性
- - 保守性、可読性の問題
-- Viewのレンダリング効率の問題
- - DOM管理の複雑性と非効率性
+### アロー関数①
+#### 基本書式
+関数リテラルの記述がシンプルに
 
 ---
-### React.jsとは
-- __UIを構築するため__ のFacebook製JavaScriptライブラリ
- - ターゲット：MVCのうちの **V(View)**
-- 近年急速にポピュラーに
- - 対抗馬：Google AngluarJS, vue.js等
-- **仮想的なDOM** の構造をJavaScriptに持ち、画面表示を更新する際は、差分のみを実際のDOMに対して適用することで、高速に処理することが可能
-- コンポーネントベースの開発のため、JSでも再利用性が高いコードを記述することが可能
+### アロー関数②
+thisキーワードの意味の違い
+ thisの意味
+通常の関数f1内
+	globalオブジェクト
+アロー関数f2内
+ testオブジェクト
 
 ---
-### Learn Once, Write Anywhere
-- 「一度学べば、どこでも書ける」
-- **Java Virtual Machine** の”**Write Once, Run Anywhere**”に対する言葉
-- Webアプリだけではなく、スマートフォンアプリ、タブレットアプリなどでもReactの仕組みで開発することができる。
- - **React Native**
+### 関数とnew 演算子
+関数 → オブジェクトの一種
+ new 関数名()
+新しい関数オブジェクトを生成し、その生成されたオブジェクトを返す
+new演算子にかかる関数は、コンストラクタの役割
 
 ---
-### GitHubに見るReact.jsの人気度
-- Angular.js
-![](/assets/PITCHME-49527.png)
-- vue.js
-![](/assets/PITCHME-73e01.png)
-- React.js
-![](/assets/PITCHME-13a0b.png)
+### アロー関数③
+省略記法 1
 
 ---
-### 特徴1: 宣言的
-- これまでのDOM操作は命令的
-- 命令的
- - 命令の手続きを与えていくアプローチ
-   - 連続的なコマンドの記述
-- 宣言的
- - 実現したいことを記述していく形
- - 問題の性質や関係性を記述していくアプローチ
+### アロー関数④
+オブジェクトリテラルとデフォルト引数
 
 ---
-### 命令的 vs 宣言的の例
-命令的
- 1. 台所に行く
- 1. 冷蔵庫を開ける
- 1. 冷蔵庫からチキンを取る
- 1. テーブルにチキンを置く
-
-宣言的
- - 夕食としてチキンを食べたい。
-
- Reactでは、**宣言的** に状態に応じた出力内容をコードに記述していく（段階的詳細化）
+### アロー関数⑤
+可変長引数、分割代入、展開演算子
 
 ---
-### 特徴2: 仮想DOM
-- 仮想DOM：DOM構造を必要な部分だけ取り出し抽象化したもの。
- - 状態の更新をノードごとに監視。必要な箇所だけを更新するアプローチ
-- DOMツリーのうち、値や状態の更新のあるものだけを更新するアプローチ
- - これまでは、部分のいずれかに更新内容があれば全て上書きしていた。
-  - 非効率
-
----
-### 仮想DOM
-<div align="center">
-<img src="assets/PITCHME-5cc94.png" width="90%" />
-</div>
-
----
-### 特徴3: 再利用可能なコンポーネント
-- 一度定義したら、他で流用可能なため再利用性が高い
-
-```JSX
-class ShoppingList extends React.Component {
-  render() {
-    return (
-      <div className="shopping-list">
-        <h1>Shopping List for {this.props.name}</h1>
-        <ul>
-          <li>Instagram</li>
-          <li>WhatsApp</li>
-          <li>Oculus</li>
-        </ul>
-      </div>
-    );
-  }
-}
-```
-
----
-### SPAとは (1 / 2)
-- SPA = Single Page Application
-- 従来のサーバーサイドのWebアプリ
- - Webページが複数存在
- - ページごとに通信を行って、画面全体を再取得
-  - TCP/IPのコネクション接続のためのロス
-  - 画面全体を再生成するための無駄な処理時間
-
----
-### SPAとは (2 / 2)
-- SPAは、Webアプリ全体をダウンロードしてから利用
- - ページ切り替え時に無駄な通信が不要
- - サーバー上のリソースへのアクセス時
-   - Ajaxなどバックグラウンドで非同期通信を行いながら処理
-- その結果→ サクサクとした動作！
-
----
-## React.jsの基本
-参考ページ
-https://facebook.github.io/react/docs/hello-world.html
-
----
-### Hello, World!
-#### HTMLファイル単体版
-- HTMLファイルをダウンロード
- - https://goo.gl/gPbWBb
-- scriptタグの内部上にJSXのコードを記述していけばよいだけ
-- ただし、このタイプの **React.js** の利用方法は、本番用ではなく、あくまでもお試し用
-
----
-### ソースコードの中身
-
-```HTML
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8" />
-    <title>Hello World</title>
-    <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
-    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
-    <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="text/babel">
-      ReactDOM.render(
-        <h1>Hello, world!</h1>,
-        document.getElementById('root')
-      );
-    </script>
-  </body>
-</html>
-```
-
-@[6](Reactライブラリの組み込み)
-@[7](ReactDOMライブラリの組み込み)
-@[8](Babelライブラリの組み込み)
-@[12-17](JSX文法による記述)
-@[12](type="text/babel"に注目)
+### Promiseオブジェクト①
+非同期処理が連なって可読性が悪くなったコールバック連鎖を改善できる、非同期処理制御オブジェクト。
 
 
 ---
-### ReactDOM.renderメソッドの役割
+### コールバック関数とは
+イベント等が発生した時に実行してほしい関数のこと。
+すぐに処理が終了しない非同期通信などで使われる
+処理が終了したら、あらかじめ登録したコールバック関数が呼び出される
 
-- *第1引数*: 書き込むHTMLのタグ(JSX表記)
-- *第2引数*: 第1引数の内容を代入する対象のDOMオブジェクト
-  - *document.getElementById(‘root’)* <br />
-　→ *id=“root”* となる **DOMオブジェクト** を取得
-
-<div align="center">
-<img src="/assets/PITCHME-d62c8.png" width="80%"/>
-</div>
+---
+### Promiseオブジェクト②
+ Promiseオブジェクトを使用した例
+入れ子になっていない
+非同期処理を行う関数（test2）の戻り値をPromiseオブジェクトにする
+非同期処理完了後、thenメソッドが呼ばれる
 
 
 ---
-### 実際のビルド環境の構築
-- React.jsを扱うには、様々なパッケージのインストールが必要
- - 導入の妨げとなっていた
-- create-react-appパッケージの登場
- - React.jsのビルド環境を簡単に作るためのnpmパッケージ
- - 簡単にビルド環境を構築できるように
-
----
-### React用プロジェクトを作成
-- Reactプロジェクト生成用npmパッケージのインストール
-
-```bash
-　$ npm install -g create-react-app
-```
-- **my-app** という名のプロジェクトを生成する場合
-
-```bash
-　$ create-react-app my-app
-```
-
-- このコマンド実行により **react, react-dom, react-scripts** などの関連パッケージが全てインストールされる
-
----
-### プロジェクト内のファイル構成
-- node_modules: <br />
- 関連パッケージフォルダ
-- public: <br />
- staticな公開フォルダ
-- src: <br />
- ビルド前の各種コード
-
-<div align="center">
-<img src="/assets/PITCHME-f5d57.png" width="9%"/>
-</div>
-
----
-### Webサーバーの起動とReactの動作確認
-
-- プロジェクトフォルダに移動
-
-```
-　$ cd my-app
-```
-
-- npmコマンドでWebサーバーを起動
-
-```
-　$ npm start
-```
-
----
-### ブラウザ上での表示
-
-![](/assets/PITCHME-942a4.png)
-
----
-### create-react-appのビルド
-- ``npm start``のみでは開発環境のみでの動作
-- 開発したものをビルドしてHTML, CSS, JS各ファイルの静的なファイル群として提供できれば、任意のWebサーバー上で公開可能
-- ビルドコマンド
-
-```bash
-$ npm run build
-```
-
----
-### ビルド結果
-- buildフォルダが生成される
-
-![](/assets/PITCHME-21443.png)
-
----
-### Hello, World
-#### create-react-app利用版
-- src/index.jsを下記のように修正し保存
-- public/index.html内に``<div id=“root”></div>``が定義されている前提
-
-```JSX
-import React from 'react';
-import ReactDOM from 'react-dom';
-// import './index.css';
-// import App from './App';
-// import registerServiceWorker from './registerServiceWorker';
-
-ReactDOM.render(<App />, document.getElementById('root'));
-
-// registerServiceWorker();
-
-```
-@[3, 4, 5, 8](初期の学習には不要。コメントアウトする)
-
----
-## JSXの導入
-
----
-### JSXとは
-
-
-
-JSXは、文字列でもHTMLでもないJavaScript拡張のタグ文法
-ReactでUIがどのように見えるべきかを記述する際に利用
+### Promiseオブジェクト③
+Promiseコンストラクタの構文
+new Promise((resolve,reject)=>{時間のかかる処理を記述…})
+ resolve：処理成功時に呼び出す関数
+ reject：処理失敗時に呼び出す関数
+thenメソッドの構文
+then(onFullFilled,onRejected)
+ onFullFilled：処理成功時のコールバック関数
+ onRejected：処理失敗時のコールバック関数
 
 
 
 ---
-### JSXの埋め込み表現
-JSX内において、中括弧{}で囲むことで、JavaScriptを埋め込むことができる。
+### Promiseオブジェクト④
+処理失敗時のコールバック関数は、一つにまとめることが可能
 
 ---
-### JSXは式の一種
-JSXは、式の一種であるためif文やforループの内部にJSXを利用可能
-変数への代入、引数への割り当て、関数からの戻り値としても利用可能
+### Promiseオブジェクト⑤
 
 ---
-### 属性の指定
-文字列リテラル
-
-
-
-中括弧を用いたJS埋め込み
+### Promiseオブジェクト⑥
+catch関数の利用
+catch(reject)
+reject：処理失敗時のコールバック関数
 
 ---
-### 子要素の指定
-空要素の場合
-XMLと同様に空要素タグ(<タグ名 />)の利用も可
-
-
-通常の子要素の表現
-HTMLと同様の表現
+### Promiseオブジェクト⑦
+ Promise.all関数を利用すると、複数の処理を並行に実行し、全て成功した場合に処理を行う、といったことも可能
+その場合、受け取る値は配列となる
 
 ---
-### 属性命名規則
-HTMLの属性名とは異なりJSとして扱われるのでcamelCase
-必ずしもHTMLと属性名が一致しない
-実行時に文法チェック。コンソール上で警告を確認可能
-
-
-例
+### Promiseオブジェクト⑧
+ Promise.race関数では、一番最初に完了した処理の結果を元に、then関数が実行される
 
 ---
-### JSXはインジェクション攻撃対策に対応
-JavaScriptのセキュリティ対策
-→XSS（クロスサイトスクリプティング）攻撃対策
-そのまま変数展開→<script>タグが挿入されると実行され、不正な攻撃の恐れ
-ReactDOMはデフォルトの場合、描画前にJSXに埋め込まれた値はエスケープ化
-何もせずに攻撃回避可能
+### Promiseオブジェクトの処理の流れ
 
 ---
-### JSXの変換ツール
-変換ツールの例
- JSX → JavaScript
- https://babeljs.io/repl/
-
- HTML → JSX
- http://magic.reactjs.net/htmltojsx.htm
+### Proxyオブジェクト①
+プロパティの設定・取得・削除・列挙など、基本的な操作をトラップし、カスタマイズするためのオブジェクト
 
 ---
-### JSXは内部的にオブジェクトを表す
-JavaScriptに変換した場合の例
+### Proxyオブジェクト②
+その他の主なトラップの例
+
+
+---
+### Proxyオブジェクト③
+全てのトラップについては以下Webサイトを参照
+『ECMAScript® 2016 Language Specification』
+http://www.ecma-international.org/ecma-262/7.0/#sec-proxy-object-internal-methods-and-internal-slots
+2015版ではトラップ“enumerate” が定義されていたが、2016版では削除されており、ChromeやFirefoxの最新版でも既に削除されているので注意
+
+---
+### Mapオブジェクト①
+キーと値でデータを管理するオブジェクト
+コレクションとして使う
+
+---
+### Mapオブジェクト②
+従来は Object を使用してコレクションを作成していた。
+ Object と Map の違い
+ Object はデフォルトで特定のキーが作られる。Map には作られない。
+ ※Object.create(null) を使うことで回避可能
+ Object のキーは文字列のみ。Map は任意の値が可能。
+ Object はサイズを取得できない。Map は簡単に取得可能。
+ Map の各要素は、for...of ループで挿入順に取得可能。
+---
+### Setオブジェクト①
+一意な値を格納するオブジェクト
+同じ値を格納しようとしても無視される
+参照型に注意
+func と ()=>{} は別の値
+
+---
+### Setオブジェクト②
+コンストラクターに配列を渡すと、要素が展開されて、別々の値として格納される
+同じ値は無視される
+---
+### クラス定義①
+JavaやC#などの言語と同じようにクラスを定義
+
+---
+### クラス定義②
+hoistとは？
+
+---
+### クラス定義③
+クラスリテラル
+
+---
+### クラス定義④
+ static 修飾子
+---
+### クラス定義⑤
+ extends キーワードによるクラスの継承
+
+---
+### クラス定義⑥
+ Array、Dateなどの組み込みオブジェクトも継承可能
+右図は Array オブジェクトの sort 関数をカスタマイズした例
+
+---
+### イテレーター①
+ for…of 命令で列挙可能なオブジェクトを作成するためのオブジェクト
+ Array、String、Map、Set などの組み込みオブジェクトは、デフォルトでこのイテレータが組み込まれている
+
+---
+### イテレーター②
+ next 関数を戻り値に持つ関数を、プロパティ Symbol.iterator に設定
+ next 関数は、続きがあるかどうか(done)と、続きがあるならば、現在の値(value)を一緒に返す
+
+---
+### ジェネレーター①
+列挙可能なオブジェクトの実装がより簡単になる
+ function* キーワードで定義
+ yield 命令で値を返す
+
+---
+### モジュール機能①
+関数やクラスをimport, exportキーワードを利用してモジュール登録と参照が可能
+
+---
+### モジュール機能②
+import構文
+import {name, …} from module
+name：インポートする変数や関数
+module：インポートするjsファイル
+import * as alias from module
+alias：moduleの別名
+module：インポートするjsファイル
+
+
+---
+### モジュール機能③
+ default キーワードにより、名前のいらないエクスポートを宣言できる
+
+---
+### ブラウザでの実行準備
+#### 一つのjsファイルに束ねる方法
+ 以下コマンドを順に実行し、必要な機能をインストール
+$ npm install –-save-dev browserify
+$ npm install --save-dev babelify
+
+以下コマンドで、jsファイルを変換・結合し、ブラウザで実行可能な jsファイルを作成する
+browserify <jsファイル1> <jsファイル2> -t [babelify --presets es2015] –o<ブラウザ用jsファイル>
+
+---
+### 既存の組み込みオブジェクトに対する機能の拡充
+ String、Array、Math、Object などの組み込みオブジェクトに便利な関数が追加されている
+参考Webサイト
+『Mozilla における ECMAScript 6 のサポート』https://developer.mozilla.org/ja/docs/Web/JavaScript/ECMAScript_6_support_in_Mozilla
