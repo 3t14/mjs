@@ -6,18 +6,56 @@
 Web教材: http://mj.is-good.net
 
 ---
-### アロー関数①
+### アロー関数 (1 / 5)
 #### 基本書式
-関数リテラルの記述がシンプルに
+- 関数リテラルの記述がシンプルに
+- **function** 記述の代わりに "**=>**"（アローを利用）
+```JavaScript
+// 従来のリテラル
+var f1 = function(a, b) { return a * b };
+
+// 上記をアロー関数に置き換えたもの
+var f2 = (a, b) => { return a * b };
+console.log(f1(2,3)); // 6
+console.log(f2(2,3)); // 6
+```
 
 ---
 ### アロー関数②
-thisキーワードの意味の違い
- thisの意味
-通常の関数f1内
-	globalオブジェクト
-アロー関数f2内
- testオブジェクト
+#### thisキーワードの意味の違い
+- thisの意味
+ - 通常の関数f1内
+	 - globalオブジェクト
+
+```JavaScript
+let MyObject = function MyObject() {
+  this.i = 1;
+  console.log(this); // オブジェクト自身の参照
+  var f1 = function() {
+    console.log(this);
+    console.log(this.i); // undefined
+  };
+  f1();
+```
+
++++
+#### 続き
+
+- thisの意味
+- アロー関数f2内
+  - testオブジェクト
+
+```JavaScript
+  var f2 = () => {
+      console.log(this);
+      console.log(this.i);
+  };
+  f2();
+}
+
+var myObject = new MyObject();
+```
+
 
 ---
 ### 関数とnew 演算子
