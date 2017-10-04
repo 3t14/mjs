@@ -190,9 +190,9 @@ $ node hello_world.js
 ### Babelのインストール
 - 異なるバージョンのJavaScriptのコードを変換できる **トランスパイラ（トランスコンパイラ）**
 - トランスパイラ **Babel** は、**npm install** コマンドを用いてインストール
-- Babelはホームディレクトリ上でインストールする
+- Babelは-gオプションをつけてインストールする（グローバルオプション）
 ```
-npm install --save-dev babel-cli
+npm install -g babel-cli
 ```
 - ``---save-dev``オプションを加えることで *pacakge.json* に開発時に必要なパッケージとして追記（更新）される
 <div align="center">
@@ -215,7 +215,7 @@ npm install --save-dev babel-cli
 
 ---
 ## Babelの設定
-- Babelにデフォルトのコンパイル言語として**ES6**を割り当てるため、*~/.babelrc* ファイルに下記を記述(ES6の場合)
+- Babelにデフォルトのコンパイル言語として**ES6**を割り当てるため、*利用アプリフォルダ/.babelrc* ファイルに下記を記述(ES6の場合)
 ```json
 { "presets": ["es2015"] }
 ```
