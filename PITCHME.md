@@ -290,7 +290,7 @@ Promise.race([test4('value1'), test4('value2'), test4('value3')])
 出典：Promise - JavaScript | MDN
 
 ---
-### Proxyオブジェクト①
+### Proxyオブジェクト (1 / 4)
 - プロパティの設定・取得・削除・列挙など、基本的な操作をトラップし、カスタマイズするためのオブジェクト
 ```JavaScript
 let target = {a:1, b:2};
@@ -306,8 +306,20 @@ console.log(p.a, p.b, p.c); // undefinedではなく'not exist'を出力
 ```
 ---
 ### Proxyオブジェクト②
-その他の主なトラップの例
-
+- その他の主なトラップの例
+```JavaScript
+let target = {a:1, b:2};
+let handler = {
+  set (target, key, name) { target[key] = 'set;'},
+  deleteProperty(target, key) { target[key] = 'delete'; },
+  has(target, key) {return false;}
+};
+let p = new Proxy(target, handler);
+p.c = 1; console.log(p.c); // set
+delete p.d;
+console.log(p.d); // delete; 削除されない
+console.log( 'a' in p); // 含まれてるがfalseを返す
+```
 
 ---
 ### Proxyオブジェクト③
