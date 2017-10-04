@@ -178,15 +178,24 @@ test2()
 
 
 ---
-### Promiseオブジェクト③
+### Promiseオブジェクト (3 / 8)
 - Promiseコンストラクタの構文
+
+```JavaScript
 new Promise((resolve,reject)=>{時間のかかる処理を記述…})
- resolve：処理成功時に呼び出す関数
- reject：処理失敗時に呼び出す関数
-thenメソッドの構文
+```
+
+- **resolve**：処理成功時に呼び出す関数
+- **reject**：処理失敗時に呼び出す関数
+
+- thenメソッドの構文
+
+```JavaScript
 then(onFullFilled,onRejected)
- onFullFilled：処理成功時のコールバック関数
- onRejected：処理失敗時のコールバック関数
+```
+
+- **onFullFilled**：処理成功時のコールバック関数
+- **onRejected**：処理失敗時のコールバック関数
 
 
 
