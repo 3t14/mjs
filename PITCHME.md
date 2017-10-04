@@ -530,6 +530,8 @@ console.log(c.show());
 - next 関数を戻り値に持つ関数を、プロパティ **Symbol.iterator** に設定
 - next 関数は、続きがあるかどうか(done)と、続きがあるならば、現在の値(value)を一緒に返す
 
++++
+
 ```JavaScript
 class Test {
   constructor () {
@@ -549,11 +551,10 @@ for (let v of c) { console.log(v); }
 ```
 
 ---
-### ジェネレーター①
-列挙可能なオブジェクトの実装がより簡単になる
- function* キーワードで定義
- yield 命令で値を返す
-
+### ジェネレーター
+- 列挙可能なオブジェクトの実装がより簡単になる
+ - **function❇︎ ** キーワードで定義
+ - **yield** 命令で値を返す
 ---
 ### モジュール機能①
 関数やクラスをimport, exportキーワードを利用してモジュール登録と参照が可能
