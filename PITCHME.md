@@ -249,7 +249,7 @@ $ npm run build
 ### Hello, World
 #### create-react-app利用版
 - src/index.jsを下記のように修正し保存
-- public/index.html内に<div id=“root”></div>が定義されている前提
+- public/index.html内に``<div id=“root”></div>``が定義されている前提
 
 ```JSX
 import React from 'react';
@@ -261,7 +261,7 @@ import ReactDOM from 'react-dom';
 ReactDOM.render(<App />, document.getElementById('root'));
 // registerServiceWorker();
 ```
-@[3, 4, 5, 8](初期の学習には不要。コメントアウトする)
+@[3, 4, 5, 7](初期の学習には不要。コメントアウトする)
 
 ---
 ## JSXの導入
