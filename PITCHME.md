@@ -623,15 +623,21 @@ console.log(a());
 ---
 ### ブラウザでの実行準備
 #### 一つのjsファイルに束ねる方法
- 以下コマンドを順に実行し、必要な機能をインストール
+- 以下コマンドを順に実行し、必要な機能をインストール
+
+```bash
 $ npm install –-save-dev browserify
 $ npm install --save-dev babelify
+```
 
-以下コマンドで、jsファイルを変換・結合し、ブラウザで実行可能な jsファイルを作成する
+- 以下コマンドで、jsファイルを変換・結合し、ブラウザで実行可能な jsファイルを作成する
+
+```
 browserify <jsファイル1> <jsファイル2> -t [babelify --presets es2015] –o<ブラウザ用jsファイル>
+```
 
 ---
 ### 既存の組み込みオブジェクトに対する機能の拡充
- String、Array、Math、Object などの組み込みオブジェクトに便利な関数が追加されている
-参考Webサイト
-『Mozilla における ECMAScript 6 のサポート』https://developer.mozilla.org/ja/docs/Web/JavaScript/ECMAScript_6_support_in_Mozilla
+-  String、Array、Math、Object などの組み込みオブジェクトに便利な関数が追加されている
+- 参考Webサイト
+ - [『Mozilla における ECMAScript 6 のサポート』](https://developer.mozilla.org/ja/docs/Web/JavaScript/ECMAScript_6_support_in_Mozilla)
