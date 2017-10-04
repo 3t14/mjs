@@ -386,7 +386,7 @@ class Car {
 ### クラス定義 (3 / 6)
 - クラスリテラル
 
-```JavaScript
+```ES6
 var Car = class { // 無名クラスの定義と変数への代入
   constructor(maker, name, price) {
     this.maker = maker;
@@ -404,7 +404,7 @@ let c = new Car('フェラーリー', 'LaFerrari', 13500000); // 生成
 ### クラス定義 (4 / 6)
 - static 修飾子
 
-```JavaScript
+```ES6
 class Car {
   static test(){ return 'static test';}
 }
@@ -414,7 +414,7 @@ console.log(Car.test()); // staticは静的メソッド。インスタンスの�
 +++
 - アクセッサ: **get**, **set** 記述を追加することでプロパティの代入・参照時に処理を組み込ませることができる
 
-```JavaScript
+```ES6
 class Car {
   constructor(a) {
     this.a = a;
@@ -433,7 +433,7 @@ console.log(c.show()); // my car:your car
 ### クラス定義 (5 / 6)
 - **extends** キーワードによるクラスの継承。差分プログラミングができる。
 
-```JavaScript
+```ES6
 class Car {
   constructor(maker, name) {
     this.maker = maker;
