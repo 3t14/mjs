@@ -287,6 +287,8 @@ Promise.race([test4('value1'), test4('value2'), test4('value3')])
 
 ![](https://mdn.mozillademos.org/files/8633/promises.png)
 
+出典：Promise - JavaScript | MDN
+
 ---
 ### Proxyオブジェクト①
 プロパティの設定・取得・削除・列挙など、基本的な操作をトラップし、カスタマイズするためのオブジェクト
@@ -329,28 +331,52 @@ func と ()=>{} は別の値
 コンストラクターに配列を渡すと、要素が展開されて、別々の値として格納される
 同じ値は無視される
 ---
-### クラス定義①
-JavaやC#などの言語と同じようにクラスを定義
+### クラス定義 (1 / 6)
+- JavaやC#などの言語と同じようにクラスを定義
+
+```JavaScript
+class Car {
+  constructor(maker, name, price) { // コンストラクタの定義
+    this.maker = maker; // プロパティの定義と代入
+    this.name = name;
+    this.price = price;
+  }
+  show() { // メソッドの定義functionは不要
+    return `${this.maker}.${this.name}.${this.price}`
+  }
+}
+let c = new Car('フェラーリー', 'LaFerrari', 13500000); // 生成
+console.log(c.show()); // メソッドの呼び出し
+```
 
 ---
-### クラス定義②
-hoistとは？
+### クラス定義 (2 / 6)
+- hoistとは？
 
 ---
-### クラス定義③
-クラスリテラル
+### クラス定義 (3 / 6)
+- クラスリテラル
+```JavaScript
+```
 
 ---
-### クラス定義④
- static 修飾子
----
-### クラス定義⑤
- extends キーワードによるクラスの継承
+### クラス定義 (4 / 6)
+- static 修飾子
+```JavaScript
+```
 
 ---
-### クラス定義⑥
- Array、Dateなどの組み込みオブジェクトも継承可能
-右図は Array オブジェクトの sort 関数をカスタマイズした例
+### クラス定義 (5 / 6)
+- extends キーワードによるクラスの継承
+```JavaScript
+```
+
+---
+### クラス定義 (6 / 6)
+- Array、Dateなどの組み込みオブジェクトも継承可能
+- 図はArray オブジェクトの sort 関数をカスタマイズした例
+```JavaScript
+```
 
 ---
 ### イテレーター①
