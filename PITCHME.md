@@ -290,7 +290,7 @@ Promise.race([test4('value1'), test4('value2'), test4('value3')])
 出典：Promise - JavaScript | MDN
 
 ---
-### Proxyオブジェクト (1 / 4)
+### Proxyオブジェクト (1 / 3)
 - プロパティの設定・取得・削除・列挙など、基本的な操作をトラップし、カスタマイズするためのオブジェクト
 ```JavaScript
 let target = {a:1, b:2};
@@ -305,7 +305,7 @@ console.log(target.a, target.b, target.c);
 console.log(p.a, p.b, p.c); // undefinedではなく'not exist'を出力
 ```
 ---
-### Proxyオブジェクト②
+### Proxyオブジェクト  (2 / 3)
 - その他の主なトラップの例
 ```JavaScript
 let target = {a:1, b:2};
@@ -322,11 +322,10 @@ console.log( 'a' in p); // 含まれてるがfalseを返す
 ```
 
 ---
-### Proxyオブジェクト③
-全てのトラップについては以下Webサイトを参照
-『ECMAScript® 2016 Language Specification』
-http://www.ecma-international.org/ecma-262/7.0/#sec-proxy-object-internal-methods-and-internal-slots
-2015版ではトラップ“enumerate” が定義されていたが、2016版では削除されており、ChromeやFirefoxの最新版でも既に削除されているので注意
+### Proxyオブジェクト  (3 / 3)
+- 全てのトラップについては以下Webサイトを参照
+ - [『ECMAScript® 2016 Language Specification』](http://www.ecma-international.org/ecma-262/7.0/#sec-proxy-object-internal-methods-and-internal-slots)
+- 2015版ではトラップ“enumerate” が定義されていたが、2016版では削除されており、ChromeやFirefoxの最新版でも既に削除されているので注意
 
 ---
 ### Mapオブジェクト①
