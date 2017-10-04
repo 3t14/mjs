@@ -356,16 +356,37 @@ for (let  [k, v] of m) { // keyとvalueを分割代入で取得できる。
   - **Object** はサイズを取得できない。Map は簡単に取得可能
   - **Map** の各要素は、**for...of** ループで挿入順に取得可能
 ---
-### Setオブジェクト①
+### Setオブジェクト (1 / 2)
 - 一意な値を格納するオブジェクト
 - 同じ値を格納しようとしても無視される
 - 参照型に注意
 - **func** と **()=>{}** は別の値
 
+```JavaScript
+let obj = {};
+let func = () => {};
+let m = new Set();
+s.add(1);
+s.add(1); // 無視される
+s.add("value");
+s.add(obj);
+s.add(func);
+s.add(()=>{})
+console.log(s.has(1)); // true
+console.log(s.has(3)); // false
+console.log(s.has(obj)); // true
+console.log(s.has({})); // false // リテラル表記のため
+
+for (let  [k, v] of m) { // keyとvalueを分割代入で取得できる。
+  console.log(k, v);
+}
+```
+
+
 ---
-### Setオブジェクト②
-コンストラクターに配列を渡すと、要素が展開されて、別々の値として格納される
-同じ値は無視される
+### Setオブジェクト (2 / 2)
+- コンストラクターに配列を渡すと、要素が展開されて、別々の値として格納される
+- 同じ値は無視される
 ---
 ### クラス定義 (1 / 6)
 - JavaやC#などの言語と同じようにクラスを定義
