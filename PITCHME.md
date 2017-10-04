@@ -291,8 +291,19 @@ Promise.race([test4('value1'), test4('value2'), test4('value3')])
 
 ---
 ### Proxyオブジェクト①
-プロパティの設定・取得・削除・列挙など、基本的な操作をトラップし、カスタマイズするためのオブジェクト
-
+- プロパティの設定・取得・削除・列挙など、基本的な操作をトラップし、カスタマイズするためのオブジェクト
+```JavaScript
+let target = {a:1, b:2};
+let handler = {
+  get: (target, name) => {
+    // in演算子は右辺のコレクション型オブジェクトの要素に左辺が含まれるかを判定
+    return name in target ? target[name] : 'not exist'; //
+  }
+};
+let p = new Proxy(target, handler);
+console.log(target.a, target.b, target.c);
+console.log(p.a, p.b, p.c); // undefinedではなく'not exist'を出力
+```
 ---
 ### Proxyオブジェクト②
 その他の主なトラップの例
@@ -411,7 +422,7 @@ class Car {
 console.log(Car.test()); // staticは静的メソッド。インスタンスの生成なしに利用できる
 ```
 
-+++
+### クラス定義 (5 / 6)
 - アクセッサ: **get**, **set** 記述を追加することでプロパティの代入・参照時に処理を組み込ませることができる
 
 ```JavaScript
@@ -430,10 +441,10 @@ console.log(c.show()); // my car:your car
 
 
 ---
-### クラス定義 (5 / 6)
+### クラス定義 (6 / 6)
 - **extends** キーワードによるクラスの継承。差分プログラミングができる。
 
-```
+```JavaScript
 class Car {
   constructor(maker, name) {
     this.maker = maker;
@@ -453,12 +464,6 @@ let c = newRacingCar('トヨタ', 'TS050 HYBRID', 'LMP1');
 console.log(c.show());
 ```
 
----
-### クラス定義 (6 / 6)
-- Array、Dateなどの組み込みオブジェクトも継承可能
-- 図はArray オブジェクトの sort 関数をカスタマイズした例
-```JavaScript
-```
 
 ---
 ### イテレーター①
