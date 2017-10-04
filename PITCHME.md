@@ -10,6 +10,7 @@ Web教材: http://mj.is-good.net
 #### 基本書式
 - 関数リテラルの記述がシンプルに
 - **function** 記述の代わりに "**=>**"（アローを利用）
+
 ```JavaScript
 // 従来のリテラル
 var f1 = function(a, b) { return a * b };
