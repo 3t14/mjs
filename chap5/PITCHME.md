@@ -343,7 +343,7 @@ console.log(c); // 22
 ```JavaScript
 var args = [1, 2, 3];
 // 関数の引数で利用したい場合
-function test(a, b, c) { console.log( a+ b+ c); }
+function test(a, b, c) { console.log( a + b + c); }
 test.apply(null, args); // 6（従来の方法: 配列を引数として引き渡して実行）
 test(...args); 		// 6 (ES6: 配列argsを展開して引数として割り当て実行)
 
