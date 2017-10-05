@@ -231,7 +231,13 @@ var i = 123; // iを宣言し、初期値123を代入
 
 ---
 ### プリミティブ型
-![](/assets/PITCHME-b7ed0.png)
+|データ型|説明|
+|:---:|:---|
+|Number|数値型。浮動小数点で表される|
+|Boolean|真偽値。true or false|
+|Null|存在しないことを意味するデータ型|
+|Undefined|未定義であることを意味するデータ型|
+|String|文字列型|
 
 <div style="font-size: 20pt">
 参考: https://developer.mozilla.org/ja/docs/Web/JavaScript/Data_structures
