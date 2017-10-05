@@ -57,7 +57,7 @@ Web教材: http://mj.is-good.net
 </div>
 
 ---
-## ES6の正式後悔は約2年前
+## ES6の正式公開は約2年前
 ### JavaScript言語仕様の大変革
 ---
 
