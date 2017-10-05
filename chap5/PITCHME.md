@@ -237,7 +237,7 @@ myObj["key2"] = "b";
 myObj["key3"] = "c";
 
 for (var key in myObj) {
-	console.log(myObj[key]); // "b" and "c"
+    console.log(myObj[key]); // "b" and "c"
 }
 
 console.log( JSON.stringify(myObj)); // {"key2": "b", "key3":"c"}
@@ -302,7 +302,7 @@ console.log(key2); // value2
 
 ```JavaScript
 function test({a = 1, b = 2}){
-	return a * b;
+    return a * b;
 }
 console.log(test({a:3, b:4}));
 ```
@@ -392,14 +392,14 @@ for (let elem of a) console.log(elem); // 1, 2, 3
 
 ```JavaScript
 function test(a = 1, b = 2) {
-	return a * b;
+    return a * b;
 }
 
 console.log(test());	// 2
 console.log(test(2, 3));	//6
 
 function test2(a = 1, b = a) {
-	return a * b;
+    return a * b;
 }
 
 console.log(test2());		// 1
@@ -412,12 +412,12 @@ console.log(test2(2));	// 4
 
 ```JavaScript
 function test3(a, b) { // ES6以前の対応方法
-	a = typeof a !== 'undefined' ? a : 1; // 未定義なら1
-	b = typeof b !== 'undefined' ? b : 1; // 未定義なら1
-	return a * b;
+    a = typeof a !== 'undefined' ? a : 1; // 未定義なら1
+    b = typeof b !== 'undefined' ? b : 1; // 未定義なら1
+    return a * b;
 }
 
-console.log(test3());		// 2
+console.log(test3());	// 2
 console.log(test3(3));	// 6
 ```
 
@@ -429,7 +429,7 @@ console.log(test3(3));	// 6
 
 ```JavaScript
 function test4(a = 1, b = 2) { // ES6以前の対応方法
-	return a * b;
+    return a * b;
 }
 
 console.log(test4(2, undefined));		// 2
@@ -446,7 +446,7 @@ console.log(test4(2, false));	// 0 : falseも未定義として扱われる
 
 ```JavaScript
 function test(...a){
-	return a;
+    return a;
 }
 console.log(test(1,2,3)); // [1, 2, 3]
 
@@ -456,19 +456,19 @@ console.log(test(1,2,3)); // [1, 2, 3]
 
 ```JavaScript
 function test2(...a){
-	a.push(4);
-	return a;
+    a.push(4);
+    return a;
 }
 console.log(test2(1,2,3)); // [1, 2, 3, 4]
 
 function test3(a){
-	return arguments;
+    return arguments;
 }
 console.log(test3(1,2,3)); // [1, 2, 3]
 
 function test4(a){
-	arguments.push(4); // NG
-	return arguments;
+    arguments.push(4); // NG
+    return arguments;
 }
 console.log(test4(1,2,3)); // NG
 ```
