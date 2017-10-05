@@ -40,13 +40,11 @@ Web教材: http://mj.is-good.net
 ---
 ## A. ×
 - プレスリリースには、明確に”both the client and the server”と記載されており、当初はサーバーサイドも意識していた。
-- ECMAScriptとJavaScriptの関係
+
+### ECMAScriptとJavaScriptの関係
 - ECMA
  - 情報通信システムの分野における国際標準化団体の旧名称。European Computer Manufacturer Association（欧州電子計算機工業会）
  - 現在はEcmaインターナショナルと呼ばれる。
-
-+++
-
 - ECMAScriptとは
  - Ecmaインターナショナルが定めるJavaScript言語仕様の国際標準規格ECMA-262のこと
  - 最新版：ECMAScript2017(ES8)
