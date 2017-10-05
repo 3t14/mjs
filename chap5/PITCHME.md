@@ -231,7 +231,7 @@ console.log( sym4.toString() ); // Symbol(foo2)
 
 
 ```JavaScript
-var myObj = {};
+let myObj = {};
 myObj[Symbol("key1")] = "a";
 myObj["key2"] = "b";
 myObj["key3"] = "c";
@@ -273,7 +273,7 @@ if (tmp === B) console.log("tmp = B");
 const A = Symbol();
 const B = Symbol();
 
-var tmp = A;
+let tmp = A;
 
 if (tmp === A) console.log("tmp = A");
 if (tmp === B) console.log("tmp = B");
@@ -301,10 +301,10 @@ console.log(key2); // value2
 #### 名前付き引数を指定
 
 ```JavaScript
-function teset({a= 1, b = 2}){
+function test({a = 1, b = 2}){
 	return a * b;
 }
-console.log( test({a:3, b:4}));
+console.log(test({a:3, b:4}));
 ```
 
 #### 変数の値を入れ替える
@@ -345,9 +345,9 @@ var args = [1, 2, 3];
 // 関数の引数で利用したい場合
 function test(a, b, c) { console.log( a+ b+ c); }
 test.apply(null, args); // 6（従来の方法: 配列を引数として引き渡して実行）
-test(...args); 					// 6 (ES6: 配列argsを展開して引数として割り当て実行)
+test(...args); 		// 6 (ES6: 配列argsを展開して引数として割り当て実行)
 
-// 配列リテラルないで利用したい場合
+// 配列リテラル内で利用したい場合
 var args = [4, ...args, 5, 6];
 console.log(args2); //4, 1, 2, 3, 5, 6
 ```
