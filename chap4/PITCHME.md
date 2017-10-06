@@ -250,6 +250,7 @@ var i = 123; // iを宣言し、初期値123を代入
 <div style="font-size: 20pt">
 参考: https://developer.mozilla.org/ja/docs/Web/JavaScript/Data_structures
 </div>
+
 ---
 
 ### 代入演算子
