@@ -117,12 +117,12 @@ https://code.visualstudio.com/
 1. 以下Webサイトにアクセスする  
 https://nodejs.org/ja/
 2. 以下ボタンをクリックしてインストーラをダウンロードし実行する  
+3. 画面の指示に従いインストールを行う
 
 <div align="center">
 <img src="/assets/2018-07-04-04-58-05.png"  width="60%"/>
 </div>
  
-3. 画面の指示に従いインストールを行う
 
 ---
 
@@ -197,12 +197,12 @@ $ node hello_world.js
 - トランスパイラ **Babel** は、**npm install** コマンドを用いてインストール
 - Babelは-gオプションをつけてインストールする（グローバルオプション）
 ```
-npm install -g babel-cli
+$ npm install -g babel-cli
 ```
-- ``---save-dev``オプションを加えることで *pacakge.json* に開発時に必要なパッケージとして追記（更新）される
-<div align="center">
-<img src="/assets/PITCHME-78607.png" width="40%" />
-</div>
+
+---
+
+
 
 ---
 ## BabelのES6, ES7の対応化
@@ -213,10 +213,19 @@ npm install -g babel-cli
   ```
   $ npm install --save-dev babel-preset-es2015
   ```
- - ES7の場合
+ - ECMAScript2018の場合
   ```
-   $ npm install --save-dev babel-preset-es2016
+   $ npm install --save-dev babel-preset-es2018
   ```
+
+### npmの--save-devオプション
+- ``--save-dev``オプションを加えることで *pacakge.json* に開発時に必要なパッケージとして追記（更新）される
+
+```json
+  "devDependencies": {
+    "babel-preset-es2015": "^6.24.1"
+  }
+```
 
 ---
 ## Babelの設定
