@@ -154,11 +154,13 @@ document.write(‘Hello, World!’); //ここでも可　
 alert('Hello, World');
 ```
 
+---
+
 ### JavaScriptでの文字列表記
 - 一般的に、シングルクォーテーションの利用を推奨
- - Google JavaScript Style Guide: http://google-styleguide.googlecode.com/svn/trunk/javascriptguide.xml?showone=Strings#Strings
+  - Google JavaScript Style Guide: http://google-styleguide.googlecode.com/svn/trunk/javascriptguide.xml?showone=Strings#Strings
 - 理由
- - 要素の属性に代入する際、ダブルクォーテーションを利用すると、正しくタグの解析ができなくなるため。
+  - 要素の属性に代入する際、ダブルクォーテーションを利用すると、正しくタグの解析ができなくなるため。
 
 ---
 
