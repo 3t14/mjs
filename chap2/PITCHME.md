@@ -55,7 +55,7 @@ Web教材: http://mj.is-good.net
 #### JavaScriptの誕生からES7の誕生までの流れ
 
 <div width="100%" align="center">
-<img alt="JSの歴史" src="/assets/PITCHME-2cd4d.png" width="75%" />
+<img alt="JSの歴史" src="/assets/2018-07-04-03-55-46.png" width="75%" />
 </div>
 
 ---

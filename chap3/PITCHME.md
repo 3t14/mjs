@@ -86,11 +86,18 @@ inc(a);
 
 ---
 ## モダンなテキストエディタ
-- 
+- GitHub Atom
+- Sublime Text
+- Adobe Brackets
+- Microsoft Visual Studio Code
+
+---
+
 ## 当研修で利用する統合開発環境: Microsoft Visual Sutdio Code
 
 - https://code.visualstudio.com/
 - 世界的に最も人気の高いオープンソースのテキストエディタ
+- Windowsだけでなく、macOS, Linuxにも対応
 - Git/ターミナルなど多種多様なコードを編集、作業するための共通機能があらかじめインストールされている。
  - 最近はプラグイン型が多いため、初期状態では機能が不足していることも多い 
 
@@ -102,7 +109,9 @@ https://code.visualstudio.com/
 3. 画面の指示に従いインストールを行う
 
 ![](assets/2018-07-04-03-07-54.png)
+
 ---
+
 ## Node.jsの導入と利用
 - HTML5テンプレートを利用する場合、ワークスペース作成時に **Node.js** はあらじめインストールされており即利用可能
 - **Node.js** は、JavaScriptのファイルをコマンドラインから呼び出して実行可能
