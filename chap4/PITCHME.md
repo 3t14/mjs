@@ -135,7 +135,6 @@ document.write(‘Hello, World!’); //ここでも可　
 ```
 ---
 
---- 
 ### alertダイアログ 1
 #### 例："Hello, World!"のダイアログ表示
 - JavaScriptファイルなどでの記述例
