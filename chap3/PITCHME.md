@@ -67,11 +67,14 @@ inc(a);
 @[4](increment.jsファイルのincrement関数を参照)
 
 ---
-## Node.jsの登場
+## Node.jsの登場 1
 
 - Node.jsはUnixプラットフォーム上で動作するサーバーサイドのJavaScript実行環境
 - 2009年にRyan Dahl氏によって開発
 - JavaScriptエンジンはGoogle V8を利用
+
+---
+## Node.jsの登場 2
 - Node.jsでは、CommonJSのモジュール機能等の一部仕様を採用
 - 現在はWebSocketやIoTのスクリプト言語やその他の目的で広く利用
 - パッケージ管理コマンドであるnpmは、JavaScriptのパッケージ管理ソフトとして広く普及
