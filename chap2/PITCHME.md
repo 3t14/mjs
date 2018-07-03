@@ -49,10 +49,10 @@ Web教材: http://mj.is-good.net
  - 現在はEcmaインターナショナルと呼ばれる。
 - ECMAScriptとは
  - Ecmaインターナショナルが定めるJavaScript言語仕様の国際標準規格ECMA-262のこと
- - 最新版：ECMAScript2017(ES8)
+ - 最新版：ECMAScript2018(ES9)
 
 ---
-#### JavaScriptの誕生からES7の誕生までの流れ
+#### JavaScriptの誕生からECMAScript2018の誕生までの流れ
 
 <div width="100%" align="center">
 <img alt="JSの歴史" src="/assets/2018-07-04-03-55-46.png" width="75%" />
