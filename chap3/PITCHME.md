@@ -82,60 +82,21 @@ inc(a);
 - サーバーサイドJavaScript実行環境であるNode.jsを活用することが一般的
  - npmコマンドによるJavaScriptライブラリのパッケージ管理
  - npmコマンドが使えれば、altJSやSassやLESSなどのCSSプリプロセッサ、さらにはトランスパイラ環境も導入が容易！
+ - 最近はnpmコマンドと同等の機能を提供するFacebookのyarnコマンドの利用も増加
 
 ---
-## 当研修で利用する統合開発環境: Cloud9 https://c9.io
+## 当研修で利用する統合開発環境: Microsoft Visual Sutdio Code
 
-- クラウド統合開発環境<br /> <em>“Development As A Service”
-(PaaS型の開発環境を提供）</em>
-- ソースコードを公開してもよいのであれば、無料で無制限のワークスペースの利用が可能
-- Sublime風のタブテキスト編集環境の利用が可能
-- 言語に応じたコード補完機能を提供
+- 最も人気の高いオープンソースのテキストエディタ
+- Git/ターミナルなど多種多様なコードを編集、作業するための共通機能があらかじめインストールされている。
+- 
+![](assets/2018-07-03-12-09-27.png)
 
----
-## 利用可能なワークスペースのテンプレート
-![](/assets/PITCHME-ad0c9.png)
+![](assets/2018-07-03-17-19-24.png)
 
 ---
-## Cloud9の料金体系
-<div align="center">
-<img src="/assets/PITCHME-7bfc0.png" width="80%"/>
-<br />
-https://c9.io/pricing
-</div>
-
-
----
-## cloud9の利用登録（通常）
-1. https://c9.io にアクセス
-1. メールアドレスを入力し、**[Sign Up]** をクリック
-1. 名前、ユーザ名などの情報を入力して **[Create Account]** をクリック
-
-<div align="center">
-<img src="/assets/PITCHME-afaf4.png" width="60%" />
-</div>
-
----
-## Cloud9の利用登録（当研修）
-1. Webアンケートに入力したメールアドレスに、Cloud9の招待メールが送信される
-1. 受信したメールのリンクをクリック
-1. あとは、通常のユーザー登録とほぼ同様
-
-<div align="center">
-<img src="/assets/PITCHME-6af44.png" width="40%" />
-</div>
-
----
-## ワークスペースの作成
-- この研修ではテンプレートとしてHTML5を選択してください。
-<div align="center">
-<img src="/assets/PITCHME-ebc25.png" width="70%" />
-</div>
-
----
-<div align="center">
-<img src="/assets/PITCHME-e8892.png" width="80%" />
-</div>
+## Microsoft Visual Sutdio Codeのインストール
+- 
 
 ---
 ## Node.jsの導入と利用

@@ -32,7 +32,7 @@ Web教材: http://mj.is-good.net
 ---
 
 ### 目標
-- モダンなJavaScriptとして<span style="color:purple">ES6</span>を取り上げ、その開発環境の構築例と基本文法について学ぶ
+- モダンなJavaScriptとして<span style="color:purple">ES6以降</span>を取り上げ、その開発環境の構築例と基本文法について学ぶ
 - モダンなJavaScriptフレームワークとして<span style="color:purple">React.js</span>の基本について理解する
 
 ---
@@ -44,18 +44,12 @@ Web教材: http://mj.is-good.net
 
 
 ---
-### cloud9登録用Webメールアドレスの入力のお願い
-- 当研修で利用する統合開発環境Cloud9を利用するには、通常はクレジットカード情報を入力する必要性あり。
-- 一方、教育用のチームについては、クレジットカードの情報を入力せずにユーザー登録することが可能です。
-- 教材ページから、指定するWebフォームを用いて、cloud9に登録するためのWebメールアドレスを入力してください。
-
----
 ### 予定
 
 | 日付 | 内容 |
 | :---: | --- |
-| 10/4 (水)| JavaScript/ES6の開発環境<br />JavaScriptの基本文法<br />ES6の基本文法|
-| 10/5 (木)| ES6の基本文法（関数とオブジェクト指向）<br />React.js入門|
+| 7/4 (水)| JavaScript/ES6の開発環境<br />JavaScriptの基本文法<br />ES6の基本文法|
+| 7/5 (木)| ES6の基本文法（関数とオブジェクト指向）<br />React.js入門|
 
 ---
 ### 当研修の進め方
