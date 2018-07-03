@@ -108,22 +108,53 @@ https://code.visualstudio.com/
 2. 以下ボタンをクリックしてインストーラをダウンロードし実行する
 3. 画面の指示に従いインストールを行う
 
-![](assets/2018-07-04-03-07-54.png)
+![](/assets/2018-07-04-03-07-54.png)
 
 ---
 
-## Node.jsの導入と利用
-- HTML5テンプレートを利用する場合、ワークスペース作成時に **Node.js** はあらじめインストールされており即利用可能
-- **Node.js** は、JavaScriptのファイルをコマンドラインから呼び出して実行可能
+## Node.jsの導入
+
+1. 以下Webサイトにアクセスする  
+https://nodejs.org/ja/
+2. 以下ボタンをクリックしてインストーラをダウンロードし実行する  
 
 <div align="center">
-<img src="/assets/PITCHME-79fad.png" width="60%" />
+<img src="/assets/2018-07-04-04-58-05.png"  width="60%"/>
 </div>
+ 
+3. 画面の指示に従いインストールを行う
+
+---
+
+## nvmコマンド
+
+- nvmコマンドは複数のNode.jsのバージョンを共存管理するためのコマンド
+- Windowsについては、nvm-windowsを下記サイトからダウンロードしてインストールする
+ - https://github.com/coreybutler/nvm-windows/releases
+
+---
+### Node.jsのアップグレード方法
+- *Node.js* のバージョンの確認方法
+```
+$ node -v
+```
+- **バージョン8** へのアップグレード
+```
+$ nvm install 8
+```
+- バージョン8では、ES modulesなどを除き、ほとんどのES6, 7の機能を充足。トランスパイルする必要はない
+
+---
+## Node.jsのバージョンの切り替え方法
+ - **バージョン8** の利用に切り替える
+```
+$ nvm use 8
+```
 
 ---
 ## JavaScriptの実行方法
 
-- **node** コマンドを利用してシェルからJavaScriptを実行
+- **node** コマンドを利用してターミナルからJavaScriptを実行
 + 例）
  1. ファイル*hello_world.js*を作成し保存する
 ```JavaScript
@@ -207,21 +238,3 @@ $ babel test.es6 > test.js
 <img src="/assets/PITCHME-2caaa.png" width="50%" />
 </div>
 
----
-### Node.jsのアップグレード方法
-- *Node.js* のバージョンの確認方法
-```
-$ node -v
-```
-- **バージョン8** へのアップグレード
-```
-$ nvm install 8
-```
-- バージョン8では、ES modulesなどを除き、ほとんどのES6, 7の機能を充足。トランスパイルする必要はない
-
----
-## Node.jsのバージョンの切り替え方法
- - **バージョン4** の利用に切り替える
-```
-$ nvm use 4
-```

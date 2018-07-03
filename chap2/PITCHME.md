@@ -13,7 +13,10 @@ Web教材: http://mj.is-good.net
 <div width="100%" align="center">
 <img alt="Evolution of the Web" src="/assets/PITCHME-d9545.png" width="60%" />
 </div>
+
+
 ---
+
 ## Q. JavaScriptが誕生して今年で何年？
 
 ---
@@ -106,7 +109,7 @@ Web教材: http://mj.is-good.net
 ---
 ## JavaScript開発スタイルの遷移
 
-![](assets/PITCHME-b213d.png)
+![](/assets/PITCHME-b213d.png)
 
 ---
 ## ブラウザのECMAScript対応状況
