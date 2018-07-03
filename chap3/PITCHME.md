@@ -200,9 +200,6 @@ $ node hello_world.js
 $ npm install -g babel-cli
 ```
 
----
-
-
 
 ---
 ## BabelのES6, ES7の対応化
@@ -217,6 +214,8 @@ $ npm install -g babel-cli
   ```
    $ npm install --save-dev babel-preset-es2018
   ```
+
+---
 
 ### npmの--save-devオプション
 - ``--save-dev``オプションを加えることで *pacakge.json* に開発時に必要なパッケージとして追記（更新）される
