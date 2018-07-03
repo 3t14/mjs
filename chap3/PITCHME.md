@@ -95,7 +95,7 @@ inc(a);
  - 最近はプラグイン型が多いため、初期状態では機能が不足していることも多い 
 
 ---
-## Microsoft Visual Sutdio Codeのインストール
+## Microsoft Visual Studio Codeのインストール
 1. 以下Webサイトにアクセスする
 https://code.visualstudio.com/
 2. 以下ボタンをクリックしてインストーラをダウンロードし実行する
