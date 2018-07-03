@@ -55,7 +55,7 @@ Web教材: http://mj.is-good.net
 #### JavaScriptの誕生からECMAScript2018の誕生までの流れ
 
 <div width="100%" align="center">
-<img alt="JSの歴史" src="![](/assets/2018-07-04-04-01-13.png)" width="75%" />
+<img alt="JSの歴史" src="/assets/2018-07-04-04-01-13.png" width="75%" />
 </div>
 
 ---
