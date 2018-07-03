@@ -129,15 +129,23 @@ document.write(‘Hello, World!’); //ここでも可　
 
 ```JavaScript
 /*
-作成日：2017-10-04
+作成日：2018-07-04
 作成者：山田 太郎
 */
 ```
 ---
 
-### alertダイアログ
-
+--- 
+### alertダイアログ 1
 #### 例："Hello, World!"のダイアログ表示
+- JavaScriptファイルなどでの記述例
+```JavaScript
+alert('Hello, World');
+```
+
+---
+### alertダイアログ 2
+#### 例：リンクを利用した"Hello, World!"のダイアログ表示
 - HTMLタグ属性への記述例
 ```HTML
 <a href="JavaScript:alert('Hello, World');">
@@ -149,10 +157,7 @@ document.write(‘Hello, World!’); //ここでも可　
 ダイアログを表示
 </a>
 
-- JavaScriptファイルなどでの記述例
-```JavaScript
-alert('Hello, World');
-```
+
 
 ---
 
