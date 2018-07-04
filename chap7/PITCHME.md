@@ -16,11 +16,14 @@ Web教材: http://mj.is-good.net
  - DOM管理の複雑性と非効率性
 
 ---
-### React.jsとは
+### React.jsとは 1
 - __UIを構築するため__ のFacebook製JavaScriptライブラリ
  - ターゲット：MVCのうちの **V(View)**
 - 近年急速にポピュラーに
  - 対抗馬：Google AngluarJS, vue.js等
+
+---
+### React.jsとは 2
 - **仮想的なDOM** の構造をJavaScriptに持ち、画面表示を更新する際は、差分のみを実際のDOMに対して適用することで、高速に処理することが可能
 - コンポーネントベースの開発のため、JSでも再利用性が高いコードを記述することが可能
 
@@ -33,11 +36,11 @@ Web教材: http://mj.is-good.net
 
 ---
 ### GitHubに見るReact.jsの人気度(2018/7/5)
-- Angular.js
+- Angular.js  
 ![](/assets/2018-07-05-06-14-43.png)
-- vue.js
+- vue.js  
 ![](/assets/2018-07-05-06-17-13.png)
-- React.js
+- React.js  
 ![](/assets/2018-07-05-06-16-13.png)
 
 
@@ -52,13 +55,15 @@ Web教材: http://mj.is-good.net
  - 問題の性質や関係性を記述していくアプローチ
 
 ---
-### 命令的 vs 宣言的の例
+### 命令的 vs 宣言的の例 1
 命令的
  1. 台所に行く
  1. 冷蔵庫を開ける
  1. 冷蔵庫からチキンを取る
  1. テーブルにチキンを置く
 
+---
+### 命令的 vs 宣言的の例 2
 宣言的
  - 夕食としてチキンを食べたい。
 
