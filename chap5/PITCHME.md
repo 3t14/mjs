@@ -240,7 +240,7 @@ for (var key in myObj) {
     console.log(myObj[key]); // "b" and "c"
 }
 
-console.log( JSON.stringify(myObj)); // {"key2": "b", "key3":"c"}
+console.log(JSON.stringify(myObj)); // {"key2": "b", "key3":"c"}
 ```
 
 ---
@@ -448,7 +448,7 @@ console.log(test4(2, false));	// 0 : falseも未定義として扱われる
 function test(...a){
     return a;
 }
-console.log(test(1,2,3)); // [1, 2, 3]
+console.log(test(1, 2, 3)); // [1, 2, 3]
 
 ```
 
@@ -459,16 +459,16 @@ function test2(...a){
     a.push(4);
     return a;
 }
-console.log(test2(1,2,3)); // [1, 2, 3, 4]
+console.log(test2(1, 2, 3)); // [1, 2, 3, 4]
 
 function test3(a){
     return arguments;
 }
-console.log(test3(1,2,3)); // [1, 2, 3]
+console.log(test3(1, 2,　3)); // [1, 2, 3]
 
 function test4(a){
     arguments.push(4); // NG
     return arguments;
 }
-console.log(test4(1,2,3)); // NG
+console.log(test4(1, 2, 3)); // NG
 ```
