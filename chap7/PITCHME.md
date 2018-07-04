@@ -32,13 +32,14 @@ Web教材: http://mj.is-good.net
  - **React Native**
 
 ---
-### GitHubに見るReact.jsの人気度
+### GitHubに見るReact.jsの人気度(2018/7/5)
 - Angular.js
-![](/assets/PITCHME-49527.png)
+![](/assets/2018-07-05-06-14-43.png)
 - vue.js
-![](/assets/PITCHME-73e01.png)
+![](/assets/2018-07-05-06-17-13.png)
 - React.js
-![](/assets/PITCHME-13a0b.png)
+![](/assets/2018-07-05-06-16-13.png)
+
 
 ---
 ### 特徴1: 宣言的
@@ -124,7 +125,7 @@ https://facebook.github.io/react/docs/hello-world.html
 ### Hello, World!
 #### HTMLファイル単体版
 - HTMLファイルをダウンロード
- - https://goo.gl/gPbWBb
+ - https://raw.githubusercontent.com/reactjs/reactjs.org/master/static/html/single-file-example.html
 - scriptタグの内部上にJSXのコードを記述していけばよいだけ
 - ただし、このタイプの **React.js** の利用方法は、本番用ではなく、あくまでもお試し用
 
@@ -206,7 +207,7 @@ https://facebook.github.io/react/docs/hello-world.html
  ビルド前の各種コード
 
 <div align="center">
-<img src="/assets/PITCHME-f5d57.png" width="9%"/>
+<img src="/assets/2018-07-05-06-56-17.png" width="9%"/>
 </div>
 
 ---
@@ -227,7 +228,7 @@ https://facebook.github.io/react/docs/hello-world.html
 ---
 ### ブラウザ上での表示
 
-![](/assets/PITCHME-942a4.png)
+![](/assets/2018-07-05-06-59-00.png)
 
 ---
 ### create-react-appのビルド
@@ -243,7 +244,7 @@ $ npm run build
 ### ビルド結果
 - buildフォルダが生成される
 
-![](/assets/PITCHME-21443.png)
+![](/assets/2018-07-05-07-00-52.png)
 
 ---
 ### Hello, World

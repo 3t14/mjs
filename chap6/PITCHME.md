@@ -17,8 +17,8 @@ let f1 = function(a, b) { return a * b };
 
 // 上記をアロー関数に置き換えたもの
 let f2 = (a, b) => { return a * b };
-console.log(f1(2,3)); // 6
-console.log(f2(2,3)); // 6
+console.log(f1(2, 3)); // 6
+console.log(f2(2,　3)); // 6
 ```
 
 ---
@@ -311,7 +311,7 @@ console.log(p.a, p.b, p.c); // undefinedではなく'not exist'を出力
 ```JavaScript
 let target = {a:1, b:2};
 let handler = {
-  set (target, key, name) { target[key] = 'set;'},
+  set (target, key, name) { target[key] = 'set';},
   deleteProperty(target, key) { target[key] = 'delete'; },
   has(target, key) {return false;}
 };
@@ -607,7 +607,8 @@ import * as alias from module
 
 ---
 ### モジュール機能 (3 / 3)
-- default キーワードにより、名前のいらないエクスポートを宣言できる
+- default キーワードにより、名前のいらないエクスポートを宣言できる
+- Node.jsではそのままでは実行できない
 
 ```JavaScript
 // module.js
@@ -626,7 +627,7 @@ console.log(a());
 - 以下コマンドを順に実行し、必要な機能をインストール
 
 ```bash
-$ npm install –-save-dev browserify
+$ npm install -g --save-dev browserify
 $ npm install --save-dev babelify
 ```
 
@@ -636,6 +637,12 @@ $ npm install --save-dev babelify
 browserify <jsファイル1> <jsファイル2> -t
   [babelify --presets es2015] –o<ブラウザ用jsファイル>
 ```
+---
+### browserifyのコマンド例
+```
+browserify module.js test.js -t [babelify --presets es2015] -o bundle.js
+```
+- この後、Node.jsでもブラウザ上でも利用可能に
 
 ---
 ### 既存の組み込みオブジェクトに対する機能の拡充
